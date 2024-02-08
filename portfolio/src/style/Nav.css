@@ -10,6 +10,7 @@
 .nav-links {
   list-style: none;
   display: flex;
+  text-align: right;
 }
 
 .nav-links li {
