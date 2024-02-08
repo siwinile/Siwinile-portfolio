@@ -2,7 +2,6 @@ import React from 'react'
 import "../style/Hero.css"
 import HeroImage from "../images/heroimage.png"
 
-
 export default function HeroSection() {
   return (
     <>
