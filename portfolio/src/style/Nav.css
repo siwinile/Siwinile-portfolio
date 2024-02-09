@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  color: #fff;
+  background-color: rgba(175, 0, 95, 0.8); /* Adjust the opacity by changing the fourth value */
+  color: #000000;
   padding: 1rem;
 }
 

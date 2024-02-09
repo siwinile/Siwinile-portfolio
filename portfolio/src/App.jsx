@@ -2,6 +2,7 @@ import Particles from "react-tsparticles"
 import HeroSection from "./pages/HeroSection"
 import Navbar from "./pages/Navbar"
 import Background from "./component/background"
+import AboutMe from "./pages/AboutMe"
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
      <Navbar />
      <HeroSection />
      <Background />
+     <AboutMe />
 
      
     </>
