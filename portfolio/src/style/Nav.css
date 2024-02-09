@@ -2,19 +2,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(175, 0, 95, 0.8); /* Adjust the opacity by changing the fourth value */
+  background-color: rgba(175,  0,  95,  0.8);
   color: #000000;
-  padding: 1rem;
+  padding:  1rem;
+  position: fixed;
+  top:  0;
+  width:  100%;
+  z-index:  1000;
 }
 
 .nav-links {
   list-style: none;
-  display: flex;
+  display: flex; /* Aligns nav links horizontally */
   text-align: right;
 }
 
 .nav-links li {
-  margin-right: 1rem;
+  margin-right:  1rem;
 }
 
 .nav-links li a {
@@ -26,6 +30,22 @@
   text-decoration: underline;
 }
 
-.logo h1 {
-  margin: 0;
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s; /* Add transition for smooth color change */
 }
+
+.nav-links li a:hover {
+  text-decoration: underline;
+  color: #ff0; /* Change to your desired hover color */
+}
+
+.logo h1 {
+  margin:  0;
+}
+
+.logo h1 {
+  margin:  0;
+}
+

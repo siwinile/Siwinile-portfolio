@@ -1,6 +1,6 @@
 import React from 'react'
 import "../style/Hero.css"
-import HeroImage from "../images/heroimage.png"
+import abutMe from "../images/abutMe.png"
 
 export default function HeroSection() {
   return (
@@ -8,11 +8,11 @@ export default function HeroSection() {
      <section id="heroSection" className="hero--section">
       <div className="hero--section--content--box">
         <div className="hero--section--content">
-          <p className="section--title">I am Siwinile</p>
+          <p className="section--title"></p>
           <h1 className="hero--section--title">
-            <span className="hero--section-title--color">Full Stack</span>{" "}
+            <span className="hero--section-title--color">Siwinile Mdani</span>{" "}
             <br />
-            Developer
+            
           </h1>
           <p className="hero--section-description">
             I am intern software developer this website serve as my portfolio 
@@ -22,7 +22,7 @@ export default function HeroSection() {
         <button className="btn btn-primary">Get In Touch</button>
       </div>
       <div className="hero--section--img">
-        <img src={HeroImage} alt="Hero Section" />
+        <img src={abutMe} alt="Hero Section" />
       </div>
     </section>    
 
