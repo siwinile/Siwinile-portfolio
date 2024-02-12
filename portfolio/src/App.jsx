@@ -6,6 +6,7 @@ import Navbar from "./pages/Navbar";
 import HeroSection from "./pages/HeroSection";
 import AboutMe from "./pages/AboutMe";
 import SkillSection from "./pages/SkillSection";
+import Projects from "./pages/Projects";
 
 
 
@@ -18,6 +19,7 @@ function App() {
           <HeroSection/>
           <AboutMe/>
           <SkillSection/>
+          <Projects/>
           <Routes>
             <Route path="/" element={<pages />}></Route>
             <Route path="*" element={<div>404 Not Found</div>}></Route>

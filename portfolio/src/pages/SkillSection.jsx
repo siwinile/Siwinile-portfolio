@@ -1,19 +1,53 @@
 import React from 'react';
+import "../style/SkillSection.css";
 
-
-
-const SkillSection = () => {
-return(
-    <section className="SkillSection container section" id = 'Skillsection'>
-        <h2 className ="Section_title">My Skill</h2>
-
-        <div classnmae="SkillSection_container grid">
-            <img src={image} alt="" className="SkillSection_img"/>
-            <div className="SkillSection_data grid">
-            <div className="SkillSection_info"></div>
-                <p classname="SkillSection_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis necessitatibus adipisci perspiciatis nisi reiciendis ratione, corporis sed quod harum, voluptate quasi ipsam, porro sunt eaque facere consequatur alias consectetur optio!</p>
-            </div>
+function Canvas() {
+  return (
+    <div className="canvas"> 
+      <div className="canvas__content">
+        <div className="canvas__section">
+          <h2>Front-end development</h2>
+          <p>
+            My canvas in the world of web development is HTML and CSS. I create clear, semantic HTML structures and give them a modern, responsive style makeover.
+          </p>
+          <p>
+            JavaScript is the foundation of my work. I use JavaScript to create user-friendly and entertaining online applications.
+          </p>
+          <h2>Back-end development</h2>
+          <p>
+            Java is my dependable travel partner when I venture to the server-side. In order to make sure that the logic behind my applications is just as solid as the user interface, Python empowers me to solve complex problems with simplicity.
+          </p>
         </div>
-    </section>
-)
+        <div className="canvas__section">
+          <h2>Skills</h2>
+          <ul>
+            <li>HTML</li>
+            <div className="progress-bar">
+              <div className="progress" style={{ width: "60%" }}>80%</div>
+            </div>
+            <li>CSS</li>
+            <div className="progress-bar">
+              <div className="progress" style={{ width: "70%" }}>90%</div>
+            </div>
+            <li>JavaScript</li>
+            <div className="progress-bar">
+              <div className="progress" style={{ width: "80%" }}>60%</div>
+            </div>
+            <li>Python</li>
+            <div className="progress-bar">
+              <div className="progress" style={{ width: "75%" }}>75%</div>
+            </div>
+            <li>Java</li>
+            <div className="progress-bar">
+              <div className="progress" style={{ width: "65%" }}>65%</div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
 }
+
+export default Canvas;
+
+  
