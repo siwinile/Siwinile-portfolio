@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./pages/Navbar";
 import HeroSection from "./pages/HeroSection";
 import AboutMe from "./pages/AboutMe";
+import SkillSection from "./pages/SkillSection";
+
 
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
           <Navbar />
           <HeroSection/>
           <AboutMe/>
+          <SkillSection/>
           <Routes>
             <Route path="/" element={<pages />}></Route>
             <Route path="*" element={<div>404 Not Found</div>}></Route>
