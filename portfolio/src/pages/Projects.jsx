@@ -1,18 +1,14 @@
 import React from "react";
 import "../style/Projects.css";
-import Images from "../images/images.jpg"
-
-
-// Projects.js
-import React from 'react';
+import Project2 from "../images/project2.jpg"
 import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Projects = () => {
   const projects = [
     {
       title: 'Project  1',
-      imageUrl: 'path-to-image-1.jpg',
+      imageUrl: 'path-to-Project2.jpg',
       description: 'Description for Project  1'
     },
     {
@@ -29,7 +25,7 @@ const Projects = () => {
       <Carousel>
         {projects.map((project, index) => (
           <div key={index}>
-            <img src={project.imageUrl} alt={project.title} />
+            <img src={Project2 } alt={project.title} />
             <p className="legend">{project.description}</p>
           </div>
         ))}
