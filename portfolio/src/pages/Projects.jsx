@@ -1,5 +1,7 @@
 import React from "react";
 import "../style/Projects.css";
+import Projects from "../images/images.jpg"
+
 
 const Slideshow = ({ images }) => {
   const [currentSlide, setCurrentSlide] = React.useState(0);
