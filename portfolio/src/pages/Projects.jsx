@@ -3,6 +3,7 @@ import "../style/Projects.css";
 import Project2 from "../images/project2.jpg"
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import Project3 from "../images/project3.jpeg"
 
 const Projects = () => {
   const projects = [
@@ -13,7 +14,7 @@ const Projects = () => {
     },
     {
       title: 'Project  2',
-      imageUrl: 'path-to-image-2.jpg',
+      imageUrl: 'path-to-Project3.jpg',
       description: 'Description for Project  2'
     },
     // ... more projects
@@ -28,8 +29,11 @@ const Projects = () => {
             <img src={Project2 } alt={project.title} />
             <p className="legend">{project.description}</p>
           </div>
+          
+          
         ))}
       </Carousel>
+
     </div>
   );
 };
