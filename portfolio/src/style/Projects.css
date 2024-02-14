@@ -1,38 +1,79 @@
-/* Projects.css */
-.projects-section {
-  padding:  2rem;
-  background-color: #f5f5f5;
-}
 
-.projects-section h2 {
-  font-size:  2rem;
-  margin-bottom:  1rem;
-}
-
-.carousel .control-arrow {
-  color: #000;
-}
-
-.carousel .thumbs-wrapper {
-  margin:  20px;
-}
-
-.carousel .slide {
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.carousel .slide img {
-  max-width:  100%;
-  height: auto;
-}
-
-.carousel .legend {
-  text-align: center;
-  padding:  1rem;
-}
-
+.carousel-wrapper {
+  max-width: 1000px;
+  height: 500px; 
+  margin: 0 auto;
+  background-color: black;
   
+}
+
+  .carousel-wrapper h6 {
+    text-align: center; 
+    font-size: 30px; 
+    font-weight: bold;
+    color: #ffffff; 
+    margin-bottom: 20px;
+   /* Add some bottom margin for spacing */
+  }
+  .carousel-button {
+    background-color: #ff96e3; 
+    color: #fff; 
+    border: none;
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .carousel-button:hover {
+    background-color: #0056b3; 
+  }
+.carousel-image1 {
+  width: 50%; 
+  height:auto;
+  border: 10px solid grey;
+  display: block; 
+  margin: 0 auto;
+}
+  .carousel-image2 {
+    width: 50%;
+    height: 350px;
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgba(241, 237, 237, 0.1);
+    border: 10px solid grey;
+  }
+  
+.carousel-image3 {
+  width: 50%; 
+  height: 350px;
+  display: block; 
+    margin: 0 auto;
+    border: 10px solid #ff96e3;
+}
+
+.carousel-caption {
+  background-color: grey;
+  color: #ff96e3;
+  padding:  10px;
+  margin-top: -60px; /* Adjust this value according to your design */
+  margin-left: auto;
+  margin-right: auto;
+  width:  50%;
+  top: auto; /* Reset the top property */
+  bottom:  0; /* Position the caption at the bottom of the image */
+  transform: none; /* Remove any transformation */
+}
+
+
+.carousel-caption h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.carousel-caption p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
