@@ -1,41 +1,23 @@
-import React from "react";
-import "../style/Projects.css";
-import Project2 from "../images/project2.jpg"
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import Project3 from "../images/project3.jpeg"
+import React from 'react'
+import Carousel from "react-bootstrap/Carousel";
+import Project1 from "./images/Project1.PNG";
+import Project2 from "./images/Project2.jpg";
+import Project3 from "./images/Project3.jpeg";
 
-const Projects = () => {
-  const projects = [
-    {
-      title: 'Project  1',
-      imageUrl: 'path-to-Project2.jpg',
-      description: 'Description for Project  1'
-    },
-    {
-      title: 'Project  2',
-      imageUrl: 'path-to-Project3.jpg',
-      description: 'Description for Project  2'
-    },
-    // ... more projects
-  ];
-
+function Projects() {
   return (
-    <div className="projects-section">
-      <h2>Projects</h2>
+    <div>
       <Carousel>
-        {projects.map((project, index) => (
-          <div key={index}>
-            <img src={Project2 } alt={project.title} />
-            <p className="legend">{project.description}</p>
-          </div>
-          
-          
-        ))}
+        <img src={Project1} alt="Project 1" />
       </Carousel>
-
+      <Carousel>
+        <img src={Project2} alt="Project 1" />
+      </Carousel>
+      <Carousel>
+        <img src={Project3} alt="Project 1" />
+      </Carousel>
     </div>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects
