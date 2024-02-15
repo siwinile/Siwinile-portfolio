@@ -1,0 +1,12 @@
+.carousel-item-content {
+    display: flex;
+    justify-content: space-between; /* Space the images apart */
+  }
+  
+  .carousel-image1,
+  .carousel-image2 {
+    flex:  1; /* Each image takes up half the space */
+    max-width:  50%; /* Ensure they don't get too wide */
+    object-fit: cover; /* Keep the aspect ratio */
+  }
+  

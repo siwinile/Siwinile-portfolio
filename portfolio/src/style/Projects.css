@@ -26,23 +26,23 @@
   }
   
   .carousel-button:hover {
-    background-color: #0056b3; 
+    background-color: #9747ff; 
   }
-.carousel-image1 {
-  width: 50%; 
-  height:auto;
-  border: 10px solid grey;
-  display: block; 
-  margin: 0 auto;
-}
+  .carousel-image1 {
+    width: 50%; 
+    height: auto;
+    display: block; 
+    margin: 0 auto;
+    
+  }
   .carousel-image2 {
     width: 50%;
     height: 350px;
     display: block; 
     margin: 0 auto; 
     border-radius: 6px;
-    box-shadow: 5px 5px 10px rgba(241, 237, 237, 0.1);
-    border: 10px solid grey;
+    
+
   }
   
 .carousel-image3 {
@@ -50,7 +50,7 @@
   height: 350px;
   display: block; 
     margin: 0 auto;
-    border: 10px solid #ff96e3;
+    
 }
 
 .carousel-caption {
