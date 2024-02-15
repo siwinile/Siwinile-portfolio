@@ -11,6 +11,7 @@ import Testimonials from "./pages/Testimonials";
 
 
 
+
 function App() {
   return (
     <div className="App">
@@ -22,6 +23,7 @@ function App() {
           <SkillSection/>
           <Projects/>
           <Testimonials/>
+          
           <Routes>
             <Route path="/" element={<pages />}></Route>
             <Route path="*" element={<div>404 Not Found</div>}></Route>

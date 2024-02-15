@@ -1,12 +1,106 @@
-.carousel-item-content {
+.carousel-container {
     display: flex;
-    justify-content: space-between; /* Space the images apart */
+    justify-content: space-between;
+    align-items: center;
+  }
+  .carousel h1 {
+    /* Your styles here */
+    font-size: 24px;
+    color: #333;
+    /* Add more styles as needed */
+  }
+  .image-with-box {
+    display: flex;
+    align-items: center;
   }
   
-  .carousel-image1,
-  .carousel-image2 {
-    flex:  1; /* Each image takes up half the space */
-    max-width:  50%; /* Ensure they don't get too wide */
-    object-fit: cover; /* Keep the aspect ratio */
+  .additional-content {
+    margin-left: 20px; /* Adjust as needed */
+    opacity: 0; /* Initially hide the content */
+    transition: opacity 0.9s ease; /* Add transition effect */
+  }
+  
+  .image-with-box:hover .additional-content {
+    opacity: 1; /* Show the content on hover */
+  }
+
+  .image-with-content {
+    display: flex;
+    align-items: center; /* Center items vertically */
+  }
+  
+  .additional-content {
+    margin-left: 20px; /* Adjust as needed */
+  }
+  
+  
+
+
+
+  
+  .carousel-images {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* Centers items vertically */
+    width: 70%; /* Adjust as needed to allocate space for the images */
+  }
+  
+  .Sbo,
+  .Chuma,
+  .Lihle {
+    width:  50%;
+    height:  400px; /* Adjust the height as needed */
+    object-fit: center;
+    border-radius:  10px; /* Rounded corners for images */
+  }
+  
+  .carousel-caption {
+    background: rgba(0,  0,  0,  0.5);
+    padding:  30px;
+    border-radius:  5px;
+    color: white;
+    width:  60%; /* Adjust as needed to allocate space for the caption */
+  }
+  
+  .Carousel .carousel-item {
+    position: relative;
+  }
+  
+  .Carousel .carousel-caption h3,
+  .Carousel .carousel-caption p {
+    margin:  0;
+  }
+  
+  .Carousel .carousel-caption h3 {
+    font-size:  24px;
+    margin-bottom:  10px;
+  }
+  
+  .Carousel .carousel-caption p {
+    font-size:  18px;
+  }
+  
+
+
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .additional-content {
+    margin-left: 20px; /* Adjust as needed */
+    animation: slideIn 0.5s ease forwards; /* Apply animation */
+    opacity: 0; /* Hide initially */
+  }
+  
+  .image-with-box:hover .additional-content {
+    opacity: 1; /* Show the content on hover */
   }
   
