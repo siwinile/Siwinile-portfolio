@@ -2,12 +2,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
   }
+  .carousel {
+    background-color: black;
+  }
+  
+  
+
+
   .carousel h1 {
     /* Your styles here */
     font-size: 24px;
     color: #333;
-    /* Add more styles as needed */
+    display: flex;
+    justify-content: center;
   }
   .image-with-box {
     display: flex;
@@ -42,16 +51,21 @@
     display: flex;
     justify-content: flex-end;
     align-items: center; /* Centers items vertically */
-    width: 70%; /* Adjust as needed to allocate space for the images */
+    width: 40%; /* Adjust as needed to allocate space for the images */
   }
   
   .Sbo,
   .Chuma,
   .Lihle {
-    width:  50%;
+    width:  40%;
     height:  400px; /* Adjust the height as needed */
     object-fit: center;
     border-radius:  10px; /* Rounded corners for images */
+  }
+  .Sbo {
+    max-width: 50%; /* Adjust the percentage as needed */
+    height: 400px;
+    margin-right:auto; /* Move the image to the right */
   }
   
   .carousel-caption {
@@ -78,6 +92,7 @@
   
   .Carousel .carousel-caption p {
     font-size:  18px;
+ 
   }
   
 
@@ -99,7 +114,10 @@
     animation: slideIn 0.5s ease forwards; /* Apply animation */
     opacity: 0; /* Hide initially */
   }
-  
+  .additional-content p{
+    color: black;
+    margin-top: -5px; /* Adjust the value as needed */
+}
   .image-with-box:hover .additional-content {
     opacity: 1; /* Show the content on hover */
   }
