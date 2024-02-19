@@ -9,6 +9,7 @@ import Project3 from "../pages/Project3.jpeg";
 
 function Projects() {
   return (
+    <section id="Projects" className="Projects--section"> 
       <div className="carousel-wrapper">
         <h6>My Projects</h6>
         <Carousel>
@@ -39,6 +40,7 @@ function Projects() {
           </Carousel.Item>
         </Carousel>
       </div>
+      </section>
     );
   }
 

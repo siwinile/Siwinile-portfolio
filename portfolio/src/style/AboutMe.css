@@ -16,29 +16,58 @@
 }
 
 .hero--section--content--box {
-  flex: 2; /* Adjust as needed */
-  margin-left: 20px; /* Adjust margin between image and text */
+  flex: 2; 
+  margin-left: 20px; 
 }
 
 .section--title {
-  font-family: 'Arial', sans-serif; /* Change to your desired font */
-  font-size: 24px; /* Change font size as needed */
-  font-weight: bold; /* Make the title bold */
+  font-family: 'Arial', sans-serif; 
+  font-size: 24px; 
+  font-weight: bold; 
 }
 
 .skills-section--heading {
-  font-family: 'Arial', sans-serif; /* Change to your desired font */
-  font-size: 36px; /* Change font size as needed */
-  color: #333; /* Text color for the heading */
+  font-family: 'Arial', sans-serif; 
+  font-size: 36px; 
+  color: #333; 
 }
 
 
 .paragraph-container {
-    display: flex; /* Display paragraphs side by side */
+    display: flex; 
 }
 
 .hero--section-description1,
 .hero--section-description2 {
-    flex: 1; /* Make paragraphs take equal space */
-    margin-right: 20px; /* Add some space between paragraphs */
+    flex: 1; 
+    margin-right: 20px; 
 }
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .about--section {
+    flex-direction: column; 
+    padding: 20px 10px; 
+  }
+
+  .about--section--img {
+    margin-bottom: 20px; 
+  }
+
+  .hero--section--content--box {
+    margin-left: 0; 
+  }
+
+  .skills-section--heading {
+    font-size: 24px; 
+  }
+
+  .hero--section-description1,
+  .hero--section-description2 {
+    margin-right: 0; 
+    margin-bottom: 20px; 
+  }
+}
+

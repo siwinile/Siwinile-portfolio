@@ -3,6 +3,7 @@ import "../style/SkillSection.css";
 
 function Canvas() {
   return (
+    <section id="Canvas" className="canvas--section">
     <div className="canvas"> 
       <div className="canvas__content">
         <div className="canvas__section">
@@ -45,6 +46,7 @@ function Canvas() {
         </div>
       </div>
     </div>
+    </section>
   );
 }
 

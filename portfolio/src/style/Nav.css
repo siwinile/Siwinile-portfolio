@@ -1,51 +1,73 @@
+/* Navbar.css */
+
+/* Style the navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(175,  0,  95,  0.8);
-  color: #000000;
-  padding:  1rem;
-  position: fixed;
-  top:  0;
-  width:  100%;
-  z-index:  1000;
+  padding:  0  20px;
+  background-color: #333; /* Dark background */
+  color: #fff; /* White text */
 }
 
-.nav-links {
-  list-style: none;
-  display: flex; /* Aligns nav links horizontally */
-  text-align: right;
+/* Style the navbar logo */
+.navbar img {
+  height:  40px;
 }
 
-.nav-links li {
-  margin-right:  1rem;
+/* Style the navbar links */
+.navbar .navbar--items {
+  display: flex;
+  gap:  20px;
 }
 
-.nav-links li a {
-  color: #fff;
-  text-decoration: none;
+/* Hide the navbar links on smaller screens */
+@media (max-width:  768px) {
+  .navbar .navbar--items {
+    display: none;
+  }
 }
 
-.nav-links li a:hover {
-  text-decoration: underline;
+/* Style the hamburger menu */
+.navbar .nav__hamburger {
+  display: none;
+  cursor: pointer;
 }
 
-.nav-links li a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s; /* Add transition for smooth color change */
+/* Show the hamburger menu on smaller screens */
+@media (max-width:  768px) {
+  .navbar .nav__hamburger {
+    display: block;
+  }
 }
 
-.nav-links li a:hover {
-  text-decoration: underline;
-  color: #ff0; /* Change to your desired hover color */
+/* Style the hamburger menu lines */
+.navbar .nav__hamburger__line {
+  display: block;
+  width:  25px;
+  height:  3px;
+  background-color: #fff;
+  margin:  5px auto;
 }
 
-.logo h1 {
-  margin:  0;
+/* Style the active state of the hamburger menu */
+.navbar .nav__hamburger.active {
+  display: none;
 }
 
-.logo h1 {
-  margin:  0;
+/* Show the active state of the hamburger menu on smaller screens */
+@media (max-width:  768px) {
+  .navbar .nav__hamburger.active {
+    display: block;
+  }
 }
+
+/* Style the navbar links when the hamburger menu is active */
+.navbar .navbar--items.active {
+  display: flex;
+  flex-direction: column;
+  gap:  20px;
+}
+
+
 

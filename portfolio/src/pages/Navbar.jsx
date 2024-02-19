@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import "../style/Nav.css"
 
 function Navbar() {
   const [navActive, setNavActive] = useState(false);
@@ -70,20 +69,6 @@ function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              to="MyPortfolio"
-              className="navbar--content"
-            >
-              Portfolio
-            </Link>
-          </li>
-          <li>
-            <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
               to="AboutMe"
               className="navbar--content"
             >
@@ -98,12 +83,41 @@ function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              to="testimonial"
+              to="Canvas"
+              className="navbar--content"
+            >
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="Projects"
+              className="navbar--content"
+            >
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="Testimonials"
               className="navbar--content"
             >
               Testimonials
             </Link>
           </li>
+      
         </ul>
       </div>
       <Link
@@ -123,3 +137,5 @@ function Navbar() {
 }
 
 export default Navbar;
+
+
