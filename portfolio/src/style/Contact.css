@@ -1,0 +1,48 @@
+/* ContactForm.css */
+
+/* Style the form */
+.contact-form {
+    background-color: #f8f9fa; /* Light gray background */
+    padding:  20px;
+    border-radius:  5px;
+    margin-bottom:  20px; /* Space below the form */
+  }
+  
+  /* Style the form title */
+  .contact-form h4 {
+    color: #343a40; /* Dark text */
+    margin-bottom:  20px;
+  }
+  
+  /* Style the form fields */
+  .contact-form .form-group {
+    margin-bottom:  15px;
+  }
+  
+  /* Style the form controls */
+  .contact-form .form-control {
+    border-radius:  5px;
+    border-color: #ced4da; /* Light gray border */
+  }
+  
+  /* Style the submit button */
+  .contact-form .btn {
+    background-color: #007bff; /* Blue background */
+    border-color: #007bff; /* Blue border */
+    color: #fff; /* White text */
+    padding:  10px  20px; /* Padding for the button */
+    font-size:  16px; /* Font size for the button text */
+    border-radius:  5px;
+  }
+  
+  /* Style the feedback text */
+  .contact-form .invalid-feedback {
+    color: #dc3545; /* Red text for invalid feedback */
+  }
+  
+  /* Style the form checkbox */
+  .contact-form .form-check-input:checked ~ .form-check-label {
+    color: #007bff; /* Blue text for checked checkbox */
+  }
+  
+  

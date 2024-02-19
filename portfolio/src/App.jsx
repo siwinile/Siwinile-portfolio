@@ -8,6 +8,8 @@ import AboutMe from "./pages/AboutMe";
 import SkillSection from "./pages/SkillSection";
 import Projects from "./pages/Projects";
 import Testimonials from "./pages/Testimonials";
+import Contact from "./pages/Contact";
+
 
 
 
@@ -23,6 +25,7 @@ function App() {
           <SkillSection/>
           <Projects/>
           <Testimonials/>
+          <Contact/>
           
           <Routes>
             <Route path="/" element={<pages />}></Route>
