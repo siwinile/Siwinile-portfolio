@@ -1,73 +1,122 @@
-/* Navbar.css */
-
-/* Style the navbar */
+/* Navbar Style Start */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:  0  20px;
-  background-color: #333; /* Dark background */
-  color: #fff; /* White text */
+  padding: 15px 85.333px;
+  background: #af0057;
+  box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure navbar is on top */
 }
 
-/* Style the navbar logo */
-.navbar img {
-  height:  40px;
-}
-
-/* Style the navbar links */
-.navbar .navbar--items {
+.navbar--items > ul {
+  list-style: none;
   display: flex;
-  gap:  20px;
+  align-items: flex-start;
+  gap: 42.667px;
+  text-decoration: none;
+  background-color: #000000;
 }
 
-/* Hide the navbar links on smaller screens */
-@media (max-width:  768px) {
-  .navbar .navbar--items {
-    display: none;
-  }
+.navbar--items ul > li > a {
+  text-decoration: none;
+
 }
 
-/* Style the hamburger menu */
-.navbar .nav__hamburger {
-  display: none;
+/* Navbar Content */
+.navbar--content {
+  background-color: #000000;
+  color: #ff96e3;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
   cursor: pointer;
 }
 
-/* Show the hamburger menu on smaller screens */
-@media (max-width:  768px) {
-  .navbar .nav__hamburger {
-    display: block;
-  }
+.navbar--items {
+  display: flex; /* Display navbar items */
+  list-style: none;
+  margin-left: 20px; /* Adjust margin between content and items */
 }
 
-/* Style the hamburger menu lines */
-.navbar .nav__hamburger__line {
-  display: block;
-  width:  25px;
-  height:  3px;
-  background-color: #fff;
-  margin:  5px auto;
+.navbar--items li {
+  margin-right: 15px; /* Adjust margin between items */
+  border: 3px solid #ff96e3; /* Add border */
+  padding: 5px 10px; /* Add padding */
 }
 
-/* Style the active state of the hamburger menu */
-.navbar .nav__hamburger.active {
+.navbar--items a {
+  text-decoration: none;
+  color: #ff96e3; /* Change text color */
+}
+
+.navbar--items a:hover {
+  color: #000000; /* Change text color on hover */
+  background-color: #ff96e3; /* Change background color on hover */
+}
+
+.navbar--active-content {
+  color: var(--primary);
+}
+ 
+
+
+
+/* Hamburger menu  */
+.nav__hamburger {
   display: none;
+  width: 1.875rem;
+  height: 1.313rem;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  top: 25px;
+  left: 100px;
 }
 
-/* Show the active state of the hamburger menu on smaller screens */
-@media (max-width:  768px) {
-  .navbar .nav__hamburger.active {
-    display: block;
+.nav__hamburger__line {
+  display: block;
+  height: 0.188rem;
+  width: 100%;
+  background-color: #000000;
+  border-radius: 0.625rem;
+  transition: all ease-in-out 0.2s;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 1200px) {
+  .nav__hamburger {
+    display: flex; /* Display hamburger menu on smaller screens */
+  }
+  
+  .navbar--items {
+    position: absolute;
+    display: none; /* Hide navbar items by default on smaller screens */
+    top: 80px; /* Adjust top position */
+    right: 0;
+    background-color: #ffffff; /* Change background color */
+    padding: 20px;
+    z-index: 1400; /* Ensure navbar items are on top */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    flex-direction: column; /* Display items in a column */
+  }
+
+  .navbar--items.active {
+    display: flex; /* Display navbar items when active */
+  }
+
+  .navbar--items ul {
+    list-style: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+  }
+
+  .navbar--items li {
+    margin-bottom: 10px; /* Add margin between items */
   }
 }
-
-/* Style the navbar links when the hamburger menu is active */
-.navbar .navbar--items.active {
-  display: flex;
-  flex-direction: column;
-  gap:  20px;
-}
-
-
 

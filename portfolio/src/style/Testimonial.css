@@ -1,31 +1,67 @@
 .testimonial-section {
-  background-color: black; /* Change background color to black */
-  padding: 50px 0; /* Increase padding top and bottom */
+  text-align: center;
+  background-color: black;
+  padding-bottom: 50px;
+}
+.testimonial-section h1 {
+  font-size: 28px; /* Adjust the font size as needed */
+  color: #ffffff; /* Add your desired color */
+  margin-bottom: 20px; /* Adjust margin as needed */
 }
 
 .testimonial-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .image-container {
-  border-radius: 50%;
+  width: 200px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
   overflow: hidden;
-  margin-right: 20px; /* Adjust margin as needed */
+  border-radius: 50%;
+  border: 5px solid #ff96e3 /* Adjust border thickness and color */
 }
 
-.additional-content {
-  color: white; /* Set text color to white */
+
+.testimonial-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.testimonial-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px; /* Adjust margin to move the items up */
 }
 
 .slide-label {
-  font-size: 20px; /* Adjust font size as needed */
-  font-weight: bold; /* Make label bold */
+  font-size: 5px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333; /* Add your desired color */
+}
+.slide-text {
+  font-size: 5px;
+  color: #000000;
+}
+.additional-content {
+  margin-top: 10px;
+  color: #ffffff;
 }
 
-.slide-text {
-  color: white; /* Set text color to white */
-  font-size: 16px; /* Adjust font size as needed */
+.additional-content h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.additional-content p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #ffffff; /* Add your desired color */
 }
 
   

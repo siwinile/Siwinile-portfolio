@@ -1,51 +1,72 @@
-/* Contact.css */
-
+/* Contact Form Styles */
 .contact--section {
-    padding: 50px 0;
-  }
-  
+  padding: 20px;
+  background-color: #000000;
+}
+
+.contact--form--container {
+  max-width: 400px;
+  max-height: 300px; /* Set a maximum height */
+  overflow: auto; /* Add overflow:auto to add a scrollbar if content exceeds the container height */
+  margin: 0; /* Remove margin auto */
+  margin-left: 20px; /* Add a left margin */
+  border: 5px solid #ff96e3;
+  padding: 10px;
+  border-radius: 10px;
+}
+.contact--section h2 {
+  /* Add your styles here */
+  color: #ffffff; /* Example color */
+  font-size: 24px; /* Example font size */
+  font-weight: bold; /* Example font weight */
+  align-items: center;
+}
+
+
+
+.contact--label {
+  display:block;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.contact--input {
+  width: calc(100% - 10px); /* Adjust width */
+  padding: 10px;
+  border: 5px solid grey;
+  border-radius: 3px;
+  font-size: 10px;
+}
+
+.checkbox--label {
+  display: block;
+  margin-top: 15px;
+  font-size: 12px;
+  color:#ffffff;
+}
+
+.contact--form--btn {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #ff96e3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
   .contact--form--container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 100%;
   }
-  
-  .contact--label {
-    display: block;
-    margin-bottom: 20px;
-  }
-  
-  .contact--input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .checkbox--label {
-    display: flex;
-    align-items: center;
-  }
-  
-  .checkbox--label input[type="checkbox"] {
-    margin-right: 10px;
-  }
-  
+
+  .contact--input,
   .contact--form--btn {
-    display: block;
-    width: 100%;
-    padding: 12px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    font-size: 12px;
   }
-  
-  @media (max-width: 768px) {
-    .contact--form--container {
-      padding: 0 10px;
-    }
-  }
+}
+
   
   

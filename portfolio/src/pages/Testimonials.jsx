@@ -18,12 +18,13 @@ function Testimonials() {
             </div>
             <div className="additional-content">
               <h3>Chuma Raxothi</h3>
-              <p>Software Developer.</p>
+
             </div>
           </div>
           <Carousel.Caption>
-            <p className="slide-label">First slide label</p>
-            <p className="slide-text">I have no doubt that Siwinile would be a tremendous asset to any project or team. I look forward to the opportunity to work with her again in the future.</p>
+            <p className="slide-label"></p>
+            <p className="slide-text">
+              I have no doubt that Siwinile would be a tremendous asset to any project or team. I look forward to the opportunity to work with her again in the future.</p>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -33,13 +34,12 @@ function Testimonials() {
               <img className="Lihle" src={Lihle} alt="Lihle" />
             </div>
             <div className="additional-content">
-              <h3>Additional Information</h3>
-              <p>Software Developer.</p>
+              <h3>Thembelihle Biyana</h3>
             </div>
           </div>
           <Carousel.Caption>
-            <p className="slide-label">Second slide label</p>
-            <p className="slide-text">What I appreciate about Siwinile is her ability to finish tasks on time. This showcases not only her talent but also her commitment to going above and beyond expectations.</p>
+            <p className="slide-label"></p>
+            <p className="slide-text">What I appreciate about Siwinile is her ability to finish tasks in time. this shows comitments and to going above and beyond expectations </p>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -49,13 +49,12 @@ function Testimonials() {
               <img className="Sbo" src={Sbo} alt="Sbo" />
             </div>
             <div className="additional-content">
-              <h3>Additional Information</h3>
-              <p>Some additional description or details.</p>
+              <h3>Sibongile Gumbi</h3>
             </div>
           </div>
           <Carousel.Caption>
-            <p className="slide-label">Third slide label</p>
-            <p className="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p className="slide-label"></p>
+            <p className="slide-text">Siwinile is easy to work with-always collaborative, open to feedback, and positive force within a team.</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

@@ -9,6 +9,7 @@ import SkillSection from "./pages/SkillSection";
 import Projects from "./pages/Projects";
 import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
+import Footer from "./pages/Footer";
 
 
 
@@ -26,6 +27,7 @@ function App() {
           <Projects/>
           <Testimonials/>
           <Contact/>
+          <Footer/>
           
           <Routes>
             <Route path="/" element={<pages />}></Route>
