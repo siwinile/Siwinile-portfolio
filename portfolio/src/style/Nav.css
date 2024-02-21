@@ -4,13 +4,29 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px 85.333px;
-  background: #af0057;
+  background: linear-gradient(to top, #Af0057, rgba(255,  255,  255,  0));
   box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000; /* Ensure navbar is on top */
+  z-index: 1000;
+  padding:150px; /* Ensure navbar is on top */
+}
+.btn-outline-primary {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #ff96e3; /* Pink color */
+  border: 2px solid #ff96e3; /* Pink color border */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #ff96e3; /* Pink color on hover */
+  color: #fff; /* White color on hover */
+  text-decoration: none; /* Remove underline on hover */
 }
 
 .navbar--items > ul {
@@ -61,7 +77,7 @@
 }
 
 .navbar--active-content {
-  color: var(--primary);
+  color: #ff96e3;
 }
  
 
@@ -99,7 +115,7 @@
     display: none; /* Hide navbar items by default on smaller screens */
     top: 80px; /* Adjust top position */
     right: 0;
-    background-color: #ffffff; /* Change background color */
+    background: linear-gradient(to top, #Af0057, rgba(255,  255,  255,  0));
     padding: 20px;
     z-index: 1400; /* Ensure navbar items are on top */
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);

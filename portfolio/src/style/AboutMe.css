@@ -11,8 +11,9 @@
 }
 
 .about--section--img img {
-  width: 120%;
-  height: 100%; 
+  width: 100%;
+  height: auto; /* Ensures image maintains aspect ratio */
+  border-radius: 10px; /* Rounded corners */
 }
 
 .hero--section--content--box {
@@ -24,26 +25,27 @@
   font-family: 'Arial', sans-serif; 
   font-size: 24px; 
   font-weight: bold; 
+  color: #ff96e3; /* Heading color */
 }
 
 .skills-section--heading {
   font-family: 'Arial', sans-serif; 
-  font-size: 36px; 
-  color: #333; 
+  font-size: 24px; 
+  font-weight: bold; 
+  color: #ff96e3; /* Heading color */
 }
 
-
 .paragraph-container {
-    display: flex; 
+  display: flex; /* Remove flex-direction: column; to display paragraphs next to each other */
 }
 
 .hero--section-description1,
 .hero--section-description2 {
-    flex: 1; 
-    margin-right: 20px; 
+  font-family: 'Arial', sans-serif; 
+  font-size: 16px; 
+  color: #ffffff; /* White color */
+  margin-right: 20px; /* Add margin-right for spacing between paragraphs */
 }
-
-
 
 /* Responsive styles */
 @media (max-width: 768px) {
@@ -60,14 +62,16 @@
     margin-left: 0; 
   }
 
+  .section--title {
+    font-size: 20px; 
+  }
+
   .skills-section--heading {
-    font-size: 24px; 
+    font-size: 20px; 
   }
 
   .hero--section-description1,
   .hero--section-description2 {
-    margin-right: 0; 
-    margin-bottom: 20px; 
+    font-size: 14px; 
   }
 }
-

@@ -1,5 +1,5 @@
 import React from 'react';
-import ParticlesConfig from './Particles-config';
+// import ParticlesConfig from './Particles-config';
 
 
 function ParticlesBackground(){

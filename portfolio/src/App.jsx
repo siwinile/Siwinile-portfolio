@@ -10,7 +10,7 @@ import Projects from "./pages/Projects";
 import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
 import Footer from "./pages/footer";
-import ParticlesBackground from "./component/ParticlesBackground";
+// import ParticlesBackground from "./component/ParticlesBackground";
 
 
 
@@ -30,7 +30,7 @@ function App() {
           <Testimonials/>
           <Contact/>
           <Footer/>
-          <ParticlesBackground/>
+          {/* <ParticlesBackground/> */}
           
           <Routes>
             <Route path="/" element={<pages />}></Route>
