@@ -49,3 +49,25 @@
 .footer-icons a:hover {
   color: #e74c3c;
 }
+/* Responsive styles */
+@media (max-width:  768px) {
+  .footer-distributed {
+    flex-direction: column;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    width:  100%; /* Stack the sections vertically */
+    text-align: center;
+    margin-bottom:  20px; /* Add some space between the sections */
+  }
+
+  .footer-links a {
+    font-size:  10px; /* Reduce font size for mobile */
+  }
+
+  .footer-icons a {
+    font-size:  20px; /* Reduce icon size for mobile */
+  }
+}

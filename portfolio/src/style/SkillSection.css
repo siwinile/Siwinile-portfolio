@@ -85,6 +85,14 @@ body {
       font-size: 10px;
     }
 
+    /* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+  .canvas__section {
+    flex: 1 1 calc(100% - 20px); /* Adjusted width calculation for full width on smaller screens */
+    margin: 0 0 20px 0; /* Remove right margin and add bottom margin for spacing */
+  }
+}
+
 
 
 

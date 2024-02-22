@@ -49,31 +49,23 @@
   margin-right: 25px; /* Add margin-right for spacing between paragraphs */
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
   .about--section {
-    flex-direction: column; 
-    padding: 20px 10px; 
+    padding: 15px;
   }
 
-  .about--section--img {
-    margin-bottom: 20px; 
+  .about--section--img-container {
+    width: 80%;
+    height: 200px;
   }
 
-  .hero--section--content--box {
-    margin-left: 0; 
+  .section--title, .skills-section--heading {
+    font-size: 20px;
   }
 
-  .section--title {
-    font-size: 20px; 
-  }
-
-  .skills-section--heading {
-    font-size: 20px; 
-  }
-
-  .hero--section-description1,
-  .hero--section-description2 {
-    font-size: 14px; 
+  .hero--section-description {
+    font-size: 8px;
+    width: 100%;
   }
 }

@@ -78,3 +78,30 @@
   margin-bottom: 0;
 }
 
+
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+  .carousel-wrapper {
+    height: 350px;
+  }
+
+  .carousel-image1,
+  .carousel-image2,
+  .carousel-image3 {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-caption {
+    width: 100%;
+    margin-top: -50px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 20px;
+  }
+
+  .carousel-caption p {
+    font-size: 14px;
+  }
+}
