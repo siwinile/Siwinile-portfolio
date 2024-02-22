@@ -2,16 +2,16 @@
   background: linear-gradient(to top, #Af0057, rgba(255,  255,  255,  0));
   color: #fff;
   padding:8px 0;
-  display: flex; /* Use flexbox to control layout */
-  justify-content: space-around; /* Distribute items evenly */
-  flex-wrap: wrap; /* Allow items to wrap to new lines */
+  display: flex; 
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .footer-left,
 .footer-center,
 .footer-right {
-  width: 30%; /* Each section takes 30% of the container */
-  text-align: center; /* Center-align content */
+  width: 30%; 
+  text-align: center; 
 }
 
 .footer-left h3 {
@@ -25,11 +25,11 @@
 }
 
 .footer-links a {
-  display: inline; /* Display links as block elements */
+  display: inline; 
   text-decoration: none;
-  color:#000000;
+  color:white;
   font-size: 12px bold;
-  margin-bottom: 10px; /* Add margin between links */
+  margin-bottom: 10px; 
 }
 
 .footer-links a:hover {
@@ -42,8 +42,8 @@
 
 .footer-icons a {
   margin-right: 10px;
-  color: #000000;
-  font-size: 18px;
+  color: white;
+  font-size: 40px;
 }
 
 .footer-icons a:hover {

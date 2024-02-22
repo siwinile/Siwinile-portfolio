@@ -45,7 +45,7 @@ const getData = async (e) => {
     return (
       <section id="Contact" className="contact--section" onSubmit={getData}>
         <div>
-          <p className="sub--title">Get In Touch</p>
+          {/* <p className="sub--title">Get In Touch</p> */}
           <h2>Contact Me</h2>
           <p className="text-lg">
             If you have any questions or just want to say hi, please feel free to

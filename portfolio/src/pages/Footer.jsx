@@ -5,7 +5,7 @@ function Footer() {
     return (
         <footer className="footer-distributed">
             <div className="footer-left">
-                <h3>Sagar<span>Developer</span></h3>
+                <h3>Siwinile<span>Mdani</span></h3>
                 <p className="footer-links">
                     <a href="Home">Home</a>
                     |
@@ -36,8 +36,8 @@ function Footer() {
                     <a href="https://www.instagram.com/winnieeuchar/"><i class="fa-brands fa-square-facebook"></i></a>
                     <a href="https://www.facebook.com/umbali.author"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/siwinile-mdani-a78b58253/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i className="fa fa-twitter"></i></a>
-                    <a href="#"><i className="fa fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
                 </div>
             </div>
         </footer>

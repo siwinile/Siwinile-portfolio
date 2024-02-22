@@ -13,20 +13,19 @@
   z-index: 1000;
   padding:150px; /* Ensure navbar is on top */
 }
-.btn-outline-primary {
+.btn.btn-outline-primary {
   padding: 10px 20px;
-  background-color: transparent;
-  color: #ff96e3; /* Pink color */
-  border: 2px solid #ff96e3; /* Pink color border */
+  background-color: #ff96e3; /* Pink color */
+  color: #000; /* Black text color */
+  border: 2px solid #ff96e3; /* Pink border */
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.btn-outline-primary:hover {
-  background-color: #ff96e3; /* Pink color on hover */
-  color: #fff; /* White color on hover */
-  text-decoration: none; /* Remove underline on hover */
+.btn.btn-outline-primary:hover {
+  background-color: #af0057; /* Darker pink color on hover */
+  color: #000; /* Keep text color black on hover */
 }
 
 .navbar--items > ul {
@@ -123,7 +122,7 @@
   }
 
   .navbar--items.active {
-    display: flex; /* Display navbar items when active */
+    display: grid; /* Display navbar items when active */
   }
 
   .navbar--items ul {

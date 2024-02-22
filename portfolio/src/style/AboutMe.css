@@ -2,25 +2,27 @@
 .about--section {
   display: flex;
   align-items: center;
-  padding: 20px;
-  background-color: #000000;
+  padding: 50px;
+  
 }
 
 .about--section--img {
-  flex: 1; 
+  flex: 3; 
+  
 }
 
-.about--section--img img {
-  width: 100%;
-  height: auto; /* Ensures image maintains aspect ratio */
-  border-radius: 10px; /* Rounded corners */
+.about--section--img-container {
+  border: 5px solid #af0057; /* Border style */
+  border-radius: 50%; /* Make the border round */
+  width: 330px; /* Set the width of the container */
+  height: 350px; /* Set the height of the container */
+  overflow: hidden; /* Hide the overflow (image) */
 }
 
-.hero--section--content--box {
-  flex: 2; 
-  margin-left: 20px; 
+.about--section--img {
+  width: 100%; /* Make the image fill the container */
+  height: auto; /* Maintain aspect ratio */
 }
-
 .section--title {
   font-family: 'Arial', sans-serif; 
   font-size: 24px; 
@@ -36,15 +38,15 @@
 }
 
 .paragraph-container {
-  display: flex; /* Remove flex-direction: column; to display paragraphs next to each other */
+  display:block;
+  margin-left: 25px; /* Remove flex-direction: column; to display paragraphs next to each other */
 }
 
-.hero--section-description1,
-.hero--section-description2 {
+.hero--section-description {
   font-family: 'Arial', sans-serif; 
-  font-size: 16px; 
+  font-size: 12px; 
   color: #ffffff; /* White color */
-  margin-right: 20px; /* Add margin-right for spacing between paragraphs */
+  margin-right: 25px; /* Add margin-right for spacing between paragraphs */
 }
 
 /* Responsive styles */

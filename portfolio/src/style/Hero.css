@@ -5,17 +5,20 @@
   justify-content: space-between;
   align-items: center;
   padding:  5px  0;
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
   /* Add a gradient background if you want */
   /* background: linear-gradient(to bottom, #f5f5f5, #ffffff); */
 }
 
 .hero--section--content--box {
-  width:  50%;
+  width: 50%; 
+  padding:  0  30px;
+  font-size: 0px; /* Increase the font size as needed */
 }
 
 .hero--section--content {
   margin-bottom:  30px;
+  font-size: large;
 }
 
 .section--title {
@@ -42,15 +45,21 @@
   margin-bottom:  40px;
 }
 
-.btn {
-  padding:  10px  20px;
-  background-color: #e91e63; /* pink color */
-  color: #fff;
+.btn.btn-primary {
+  background-color: #ff96e3; /* Pink background color */
+  color: #000; /* Black text color */
   border: none;
-  border-radius:  5px;
+  border-radius: 5px;
+  padding: 10px 20px;
   cursor: pointer;
-  transition: background-color  0.3s ease;
+  transition: background-color 0.3s ease;
 }
+
+.btn.btn-primary:hover {
+  background-color: #af0057; /* Darker pink color on hover */
+  color: #000; /* Keep text color black on hover */
+}
+
 
 .btn:hover {
   background-color: #d81b60; /* darker pink color on hover */
@@ -76,4 +85,28 @@
 
 .btn-primary:hover {
   background-color: #af0057; /* Darker pink color on hover */
+}
+
+
+/* Back ground video header */
+#header #video-background{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire container */
+  z-index: -1;
+}
+
+@media screen and (max-width: 1200px) {
+  #header #video-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire container */
+    z-index: -1;
+  }
 }
