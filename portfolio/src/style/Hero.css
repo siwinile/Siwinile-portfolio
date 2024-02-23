@@ -60,12 +60,16 @@
 
 .hero--section--img {
   width: 50%; /* Adjust width as needed */
-  margin-bottom: 20px; /* Adjust margin bottom for spacing */
+  margin-bottom: 20px; 
+  border-bottom: 6px solid #af0057;
+  width: 50%;
+  
 }
 
 .hero--section--img img {
-  width: 50%; /* Take full width */
+ /* Take full width */
   height: auto;
+  width: 100%;
 }
 
 /* Media query for screens with a maximum width of 768px */
@@ -137,5 +141,19 @@
     height: 100%;
     object-fit: cover; 
     z-index: -1;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  #heroSection {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+  }
+  
+  .hero--section--img {
+    width: 40%; /* Reduce the width of the image */
+    margin-bottom: 0px; /* Adjust margin bottom for spacing */
   }
 }

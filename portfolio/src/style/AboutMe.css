@@ -12,6 +12,7 @@
 .about--section--img {
   max-width: 100%;
   height: auto;
+  border-bottom: #af0057 5px solid;
 }
 
 .hero--section--content--box {
