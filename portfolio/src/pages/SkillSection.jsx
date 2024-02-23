@@ -4,6 +4,9 @@ import "../style/SkillSection.css";
 function Canvas() {
   return (
     <section id="Canvas" className="canvas--section">
+      <div className="heading">
+        <h1>Skills</h1>
+      </div>
     <div className="canvas"> 
       <div className="canvas__content">
         <div className="canvas__section">

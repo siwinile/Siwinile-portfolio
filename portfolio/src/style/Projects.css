@@ -3,15 +3,21 @@
   max-width: 1000px;
   height: 500px; 
   margin: 0 auto;
- 
-  
 }
+.carousel-item h3 {
+  font-size:  24px;
+  font-weight: bold;
+  color:Grey;
+  margin-bottom:  10px; /* Space between the heading and any content that follows */
+}
+
+
 
   .carousel-wrapper h6 {
     text-align: center; 
     font-size: 30px; 
     font-weight: bold;
-    color: #ffffff; 
+    color: #af0057; 
     margin-bottom: 20px;
    /* Add some bottom margin for spacing */
   }
@@ -33,25 +39,34 @@
     height: auto;
     display: block; 
     margin: 0 auto;
+    border-radius: 25px;
+    filter: drop-shadow(30px  30px  30px rgba(255,  255,  255,  0.5)) drop-shadow(50px  50px  5px rgba(255,  102,  204,  0.5));
+    }
     
-  }
+  
   .carousel-image2 {
     width: 50%;
-    height: 350px;
+    height: 250px;
     display: block; 
     margin: 0 auto; 
-    border-radius: 6px;
-    
-
+    border-radius: 15px;
+    filter: drop-shadow(30px  30px  30px rgba(255,  255,  255,  0.5)) drop-shadow(50px  50px  5px rgba(255,  102,  204,  0.5));
   }
+
+
   
 .carousel-image3 {
   width: 50%; 
-  height: 350px;
+  height: 300px;
   display: block; 
     margin: 0 auto;
+    border-radius: 50px;
+    filter: drop-shadow(30px  30px  30px rgba(255,  255,  255,  0.5)) drop-shadow(50px  50px  5px rgba(255,  102,  204,  0.5));
+    }
     
-}
+    
+
+
 
 .carousel-caption {
   background-color: grey;
@@ -80,28 +95,14 @@
 
 
 /* Media query for screens with a maximum width of 768px */
-@media screen and (max-width: 768px) {
-  .carousel-wrapper {
-    height: 350px;
+@media (max-width:  768px) {
+  .carousel-image1, .carousel-image2, .carousel-image3 {
+    filter: drop-shadow(3vw  3vw  3vw rgba(255,  255,  255,  0.7)) drop-shadow(4vw  4vw  2vw rgba(255,  102,  204,  0.7));
   }
+}
 
-  .carousel-image1,
-  .carousel-image2,
-  .carousel-image3 {
-    width: 100%;
-    height: auto;
-  }
-
-  .carousel-caption {
-    width: 100%;
-    margin-top: -50px;
-  }
-
-  .carousel-caption h3 {
-    font-size: 20px;
-  }
-
-  .carousel-caption p {
-    font-size: 14px;
+@media (max-width:  480px) {
+  .carousel-image1, .carousel-image2, .carousel-image3 {
+    filter: drop-shadow(1vw  1vw  1vw rgba(255,  255,  255,  0.7)) drop-shadow(2vw  2vw  1vw rgba(255,  102,  204,  0.7));
   }
 }

@@ -46,7 +46,7 @@
 .navbar--content {
   background-color: #000000;
   color: #ff96e3;
-  font-size: 10px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -54,30 +54,37 @@
 }
 
 .navbar--items {
-  display: flex; /* Display navbar items */
+  display: flex; 
   list-style: none;
-  margin-left: 20px; /* Adjust margin between content and items */
+  margin-left: 20px;
 }
 
 .navbar--items li {
-  margin-right: 15px; /* Adjust margin between items */
-  border: 3px solid #ff96e3; /* Add border */
-  padding: 5px 10px; /* Add padding */
+  margin-right: 15px; 
+  border: 3px solid #ff96e3; 
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 .navbar--items a {
   text-decoration: none;
-  color: #ff96e3; /* Change text color */
+  color: #ff96e3; 
 }
 
 .navbar--items a:hover {
-  color: #000000; /* Change text color on hover */
-  background-color: #ff96e3; /* Change background color on hover */
+  color: #000000; 
+  background-color: #ff96e3; 
 }
 
 .navbar--active-content {
   color: #ff96e3;
 }
+.logo {
+  width: 10px;
+  height: 10px;
+}
+
+
  
 
 
@@ -98,7 +105,7 @@
   display: block;
   height: 0.188rem;
   width: 100%;
-  background-color: #000000;
+  background-color:white;
   border-radius: 0.625rem;
   transition: all ease-in-out 0.2s;
 }
@@ -111,7 +118,7 @@
   
   .navbar--items {
     position: absolute;
-    display: none; /* Hide navbar items by default on smaller screens */
+    display: none;/* Hide navbar items by default on smaller screens */
     top: 80px; /* Adjust top position */
     right: 0;
     background: linear-gradient(to top, #Af0057, rgba(255,  255,  255,  0));

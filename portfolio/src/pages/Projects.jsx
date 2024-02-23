@@ -4,9 +4,9 @@ import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../style/Projects.css";
 
-import Project1 from "../pages/Project1.webp";
-import Project2 from "../pages/Project2.jpg";
-import Project3 from "../pages/Project3.jpeg";
+import Project1 from "../pages/Project 1.jpg";
+import Project2 from "../pages/Project 2.jpg";
+import Project3 from "../pages/Project 3.jpg";
 
 
 function Projects() {
@@ -37,26 +37,26 @@ function Projects() {
         <Carousel>
           <Carousel.Item>
             <img className="carousel-image1" src={Project1} alt="Project 1" />
-            <Carousel.Caption>
+          
               <h3>Bank App</h3>
-            </Carousel.Caption>
+           
             <button className="carousel-button" data-github-url="https://github.com/siwinile/bank-app">View on GitHub</button>
           </Carousel.Item>
 
           <Carousel.Item>
             <img className="carousel-image2" src={Project2} alt="Project 2" />
-            <Carousel.Caption>
+            
               <h3>Financial Calculator</h3>
 
-            </Carousel.Caption>
+           
             <button className="carousel-button" data-github-url="https://github.com/siwinile/financial-calculator">View on GitHub</button>
           </Carousel.Item>
 
           <Carousel.Item>
             <img className="carousel-image3" src={Project3} alt="Project 3" />
-            <Carousel.Caption>
+           
               <h3>Tax Calculator</h3>
-            </Carousel.Caption>
+           
             <button className="carousel-button" data-github-url="https://github.com/siwinile/tax-calculator">View on GitHub</button>
           </Carousel.Item>
         </Carousel>

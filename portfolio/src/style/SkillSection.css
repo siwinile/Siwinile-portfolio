@@ -28,10 +28,10 @@ body {
   flex: 1 1 calc(33.33% - 20px); /* Adjusted width calculation */
   margin: 0 20px 20px 0;
   padding: 20px;
-  background-color: grey; /* Lightened background color */
+  background-color:#acb4b4; /* Lightened background color */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adjusted box shadow */
   border-radius: 8px; /* Slightly increased border radius */
-  border: 4px solid #ff00ff; /* Changed border color */
+  border: 5px solid #80cab1; /* Changed border color */
 }
 
 .canvas__section h2 {
@@ -68,8 +68,8 @@ body {
       height: 8px; /* Reduced height */
       line-height: 8px; /* Added line-height */
       text-align: center;
-      color: black;
-      border-radius: 6px; /* Reduced border radius */
+      color: white;
+      border-radius: 25px; /* Reduced border radius */
       background-color: #ff96e3;
       width: 0; /* Initially set width to 0 */
       transition: width 0.5s ease-in-out; /* Added transition for smoother animation */
@@ -83,6 +83,13 @@ body {
     /* Adjusted font size for progress text */
     .progress-bar .progress {
       font-size: 10px;
+    }
+    .heading {
+      text-align: center;
+    }
+    
+    .heading h1 {
+      color: #af0057;
     }
 
     /* Media Query for smaller screens */
