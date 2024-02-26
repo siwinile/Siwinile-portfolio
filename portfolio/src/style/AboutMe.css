@@ -1,66 +1,52 @@
 .about--section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 50px 20px; /* Adjust padding as needed */
+  padding:  50px  0;
 }
 
-.about--section--img-container {
-  margin-right: 20px; /* Adjust margin for spacing between image and content */
+.about--section--container {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center; 
+ 
 }
 
 .about--section--img {
-  max-width: 100%;
+  max-width:  100%;
   height: auto;
-  border-bottom: #af0057 5px solid;
+  margin-right:  20px; 
+  flex:  1  0 auto; 
+  border-bottom: 6px solid #af0057;
 }
 
-.hero--section--content--box {
-  flex: 1; /* Allow content box to grow and take remaining space */
-  max-width: 600px; /* Adjust max-width as needed */
-  text-align: left; /* Align text to the left */
-}
-
-.section--title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
+.hero--section--content--box.about--section--box {
+  max-width:  600px; 
+  text-align: center;
+  flex:  1  0 auto; /
 }
 
 .skills-section--heading {
-  font-size: 36px;
-  margin-bottom: 20px;
+  font-size:  36px;
+  margin-bottom:  20px;
   color:#af0057;
 }
 
 .hero--section-description {
-  font-size: 16px;
-  line-height: 1.5;
-  color:grey;
+  font-size:  18px;
+  line-height:  1.6;
+  color:white;
 }
 
-/* Media query for screens with a maximum width of 768px */
-@media screen and (max-width: 768px) {
-  .about--section {
-    flex-direction: column; /* Change flex direction to stack content vertically */
-    align-items: center;
-    padding: 10px 5px; /* Adjust padding for smaller screens */
+@media (min-width:  768px) {
+  .about--section--container {
+    justify-content: flex-start; 
+    flex-direction: row; 
   }
 
-  .about--section--img-container {
-    margin-right: 0; /* Remove margin for smaller screens */
-    margin-bottom: 20px; /* Add margin bottom for spacing */
-  }
-
-  .hero--section--content--box {
-    max-width: 50%; /* Adjust max-width for smaller screens */
-  }
-
-  .skills-section--heading {
-    font-size: 28px; /* Adjust font-size for smaller screens */
+  .hero--section--content--box.about--section--box {
+    text-align: left;
   }
 
   .hero--section-description {
-    font-size: 14px; /* Adjust font-size for smaller screens */
+    font-size:  20px;
   }
 }

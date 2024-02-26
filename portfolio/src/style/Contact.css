@@ -12,7 +12,7 @@
   border: 5px solid #ff96e3;
   padding: 10px;
   border-radius: 10px;
-  background-color: #fff; /* Set background color to white */
+  background-color: #fff; 
 }
 
 .contact--section {
@@ -61,20 +61,20 @@
 }
 
 .sub--title {
-  font-size: 18px; /* Adjust the font size as needed */
-  color: #af0057; /* Your desired color */
-  font-weight: bold; /* Add bold font weight */
+  font-size: 18px; 
+  color: #af0057; 
+  font-weight: bold; 
 }
 
 h2 {
-  font-size: 24px; /* Adjust the font size as needed */
-  color: #333; /* Your desired color */
-  margin-top: 10px; /* Add some top margin */
+  font-size: 24px; 
+  color: #333; 
+  margin-top: 10px; 
 }
 
 .text-lg {
-  font-size: 16px; /* Adjust the font size as needed */
-  color: #666; /* Your desired color */
+  font-size: 16px;
+  color: #666; 
 }
 
 

@@ -4,31 +4,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px 0; /* Adjust padding as needed */
+  padding: 100px 0; 
+ 
 }
 
 .hero--section--content--box {
-  flex: 1; /* Allow content box to grow and take remaining space */
-  padding: 0 20px; /* Adjust padding as needed */
-  text-align: center; /* Center align content */
+  flex: 1; 
+  padding: 0 20px; 
+  text-align: center; 
 }
 
 .hero--section--content {
-  text-align: left; /* Align text to the left */
+  text-align: left; 
 }
 
 .section--title {
   font-size: 24px;
   font-weight: bold;
   color: #333;
-  margin-bottom: 20px; /* Adjust margin as needed */
+  margin-bottom: 20px; 
 }
 
 .hero--section--title {
   font-size: 48px;
   font-weight: bold;
   color: #333;
-  margin-bottom: 20px; /* Adjust margin as needed */
+  margin-bottom: 20px; 
 }
 
 .hero--section-title--color {
@@ -39,7 +40,7 @@
   font-size: 20px;
   line-height: 1.6;
   color: #666;
-  margin-bottom: 40px; /* Adjust margin as needed */
+  margin-bottom: 40px; 
 }
 
 .btn.btn-primary,
@@ -59,7 +60,7 @@
 }
 
 .hero--section--img {
-  width: 50%; /* Adjust width as needed */
+  width: 50%; 
   margin-bottom: 20px; 
   border-bottom: 6px solid #af0057;
   width: 50%;
@@ -67,7 +68,7 @@
 }
 
 .hero--section--img img {
- /* Take full width */
+ 
   height: auto;
   width: 100%;
 }
@@ -75,19 +76,19 @@
 /* Media query for screens with a maximum width of 768px */
 @media screen and (max-width: 768px) {
   .hero--section {
-    flex-direction: column; /* Stack items vertically on smaller screens */
-    align-items: center; /* Center align items */
+    flex-direction: column; 
+    align-items: center; 
   }
 
   .hero--section--img {
-    width: 100%; /* Take full width on smaller screens */
-    margin-bottom: 20px; /* Adjust margin bottom for spacing */
+    width: 100%; 
+    margin-bottom: 20px; 
   }
 
   .hero--section--content--box {
-    width: 100%; /* Take full width on smaller screens */
-    text-align: center; /* Center align content */
-    padding: 0 10px; /* Adjust padding for smaller screens */
+    width: 100%; 
+    text-align: center; 
+    padding: 0 10px; 
   }
 }
 
@@ -95,23 +96,23 @@
 /* Media query for screens with a maximum width of 768px */
 @media screen and (max-width: 768px) {
   .hero--section {
-    padding: 10px 0; /* Adjust padding for smaller screens */
+    padding: 10px 0; 
   }
 
   .hero--section--content--box {
-    padding: 0 10px; /* Adjust padding for smaller screens */
+    padding: 0 10px; 
   }
 
   .section--title {
-    font-size: 20px; /* Adjust font-size for smaller screens */
+    font-size: 20px;
   }
 
   .hero--section--title {
-    font-size: 36px; /* Adjust font-size for smaller screens */
+    font-size: 36px; 
   }
 
   .hero--section-description {
-    font-size: 16px; /* Adjust font-size for smaller screens */
+    font-size: 16px; 
   }
 }
 
