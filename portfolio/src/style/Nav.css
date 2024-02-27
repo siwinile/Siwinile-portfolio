@@ -29,6 +29,11 @@
   left:  100px;
 }
 
+.navbar--content {
+  color: white; /* Dark text color */
+  text-decoration: none;
+}
+
 .nav__hamburger__line {
   display: block;
   height:  0.188rem;
@@ -64,6 +69,7 @@
   .navbar--items ul {
     list-style: none; 
     padding:  0; 
+    
   }
 
   .navbar--items li {

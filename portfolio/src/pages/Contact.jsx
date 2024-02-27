@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { ToastContainer, toast } from "react-toastify";
-import ReCAPTCHA from 'react-google-recaptcha'; // Import the ReCAPTCHA component
+import ReCAPTCHA from 'react-google-recaptcha';
+import emailjs from 'emailjs-com'; // Import EmailJS
 import "../style/Contact.css";
 
 export default function ContactMe() {
   const [user, setUser] = useState({
     FullName: '', Subject: '', Email: '', Message: ''
   });
-
-  const [recaptchaResponse, setRecaptchaResponse] = useState(""); // State to hold the reCAPTCHA response
+  const [recaptchaResponse, setRecaptchaResponse] = useState("");
 
   let name, value;
   const data = (e) => {
@@ -18,42 +18,38 @@ export default function ContactMe() {
   };
 
   const handleRecaptchaResponse = (response) => {
-    setRecaptchaResponse(response); // Store the reCAPTCHA response
+    setRecaptchaResponse(response);
   };
 
   const getData = async (e) => {
     e.preventDefault();
     const { FullName, Subject, Email, Message } = user;
 
-    // Include the reCAPTCHA response in your request
-    const options = {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        FullName, Subject, Email, Message, recaptchaResponse // Add reCAPTCHA response here
-      })
-    };
+    try {
+      await emailjs.send('service_mkt526r', 'template_wrhc5xb', {
+        FullName,
+        Subject,
+        Email,
+        Message,
+      }, 'cAg2TMa5f1ZJImqdh');
 
-    const res = await fetch('https://eucharistar-default-rtdb.firebaseio.com/UserData.json', options);
-    console.log(res);
-    if (res.ok) {
       alert('Message sent successfully!');
-    } else {
+    } catch (error) {
+      console.error('Error sending email:', error);
       alert('Error Occurred');
     }
   };
 
   return (
-    <section id="Contact" className="contact--section" onSubmit={getData}>
+    <section id="Contact" className="contact--section">
       <div>
         <h2>Contact Me</h2>
         <p className="text-lg">
           If you have any questions or just want to say hi, please feel free to
         </p>
       </div>
-      <form className="contact--form--container">
+      <form className="contact--form--container" onSubmit={getData}>
+        {/* Form Inputs */}
         <div className="container">
           <label htmlFor="full-name" className="contact--label">
             <span className="text-md">Full Name</span>
@@ -105,7 +101,7 @@ export default function ContactMe() {
             required
           />
         </label>
-        <label htmlFor="checkboc" className="checkbox--label">
+        <label htmlFor="checkbox" className="checkbox--label">
           <input type="checkbox" required name="checkbox" id="checkbox" />
           <span className="text-sm">I accept the terms</span>
         </label>
@@ -121,11 +117,3 @@ export default function ContactMe() {
     </section>
   );
 }
-
-
-
-
-
-
-
-

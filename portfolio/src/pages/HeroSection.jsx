@@ -24,7 +24,7 @@ const DownloadCVButton = () => {
 
 export default function HeroSection() {
   return (
-    <header id="header" style={{ backgroundColor: 'black' }}>
+    <header id="header" style={{ backgroundColor: 'none' }}>
       <video autoPlay muted loop id="video-background">
         <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
