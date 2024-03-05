@@ -7,6 +7,7 @@ import "../style/Projects.css";
 import Project1 from "../pages/Project 1.jpg";
 import Project2 from "../pages/Project 2.jpg";
 import Project3 from "../pages/Project 3.jpg";
+import Project4 from "../pages/Project 4.jpg";
 
 
 function Projects() {
@@ -56,6 +57,13 @@ function Projects() {
             <img className="carousel-image3" src={Project3} alt="Project 3" />
            
               <h3>Tax Calculator</h3>
+           
+            <button className="carousel-button" data-github-url="https://github.com/siwinile/tax-calculator">View on GitHub</button>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="carousel-image3" src={Project4} alt="Project 3" />
+           
+              <h3>Website</h3>
            
             <button className="carousel-button" data-github-url="https://github.com/siwinile/tax-calculator">View on GitHub</button>
           </Carousel.Item>
