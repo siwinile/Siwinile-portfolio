@@ -1,3 +1,4 @@
+/* For desktop screens */
 #projects {
   text-align: center;
   padding: 50px 0;
@@ -30,19 +31,17 @@
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 50%; 
-    height: auto;
-    display: block; 
-    margin: 0 auto;
-    border-radius: 25px;
-    filter: drop-shadow(30px  30px  30px rgba(255,  255,  255,  0.5)) drop-shadow(50px  50px  5px rgba(255,  102,  204,  0.5));
-  
+  width: 50%; 
+  height: auto;
+  display: block; 
+  margin: 0 auto;
+  border-radius: 25px;
+  filter: drop-shadow(30px  30px  30px rgba(255,  255,  255,  0.5)) drop-shadow(50px  50px  5px rgba(255,  102,  204,  0.5));
 }
 
 .project-img {
   width: 100%;
   border-radius: 10px;
-  
 }
 
 .project-title {
@@ -53,7 +52,9 @@
 
 .btn-container {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
   margin-top: 20px;
 }
 
@@ -79,4 +80,11 @@
   height: 50px;
   margin-top: 50px;
   cursor: pointer;
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .details-container {
+    width: 80%; /* Adjust the width for smaller screens */
+  }
 }
