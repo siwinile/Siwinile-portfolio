@@ -1,108 +1,82 @@
-
-.carousel-wrapper {
-  max-width: 1000px;
-  height: 500px; 
-  margin: 0 auto;
-}
-.carousel-item h3 {
-  font-size:  24px;
-  font-weight: bold;
-  color:Grey;
-  margin-bottom:  10px; /* Space between the heading and any content that follows */
+#projects {
+  text-align: center;
+  padding: 50px 0;
 }
 
+.section__text__p1 {
+  font-size: 24px;
+  color: #af0057;
+}
 
+.title {
+  font-size: 36px;
+  color: #af0057;
+  margin-bottom: 30px;
+}
 
-  .carousel-wrapper h6 {
-    text-align: center; 
-    font-size: 30px; 
-    font-weight: bold;
-    color: #af0057; 
-    margin-bottom: 20px;
-   /* Add some bottom margin for spacing */
-  }
-  .carousel-button {
-    background-color: #ff96e3; 
-    color: #fff; 
-    border: none;
-    padding: 5px 10px; 
-    border-radius: 5px; 
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .carousel-button:hover {
-    background-color: #9747ff; 
-  }
-  .carousel-image1 {
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-containers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.details-container {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 50%; 
     height: auto;
     display: block; 
     margin: 0 auto;
     border-radius: 25px;
     filter: drop-shadow(30px  30px  30px rgba(255,  255,  255,  0.5)) drop-shadow(50px  50px  5px rgba(255,  102,  204,  0.5));
-    }
-    
   
-  .carousel-image2 {
-    width: 50%;
-    height: 250px;
-    display: block; 
-    margin: 0 auto; 
-    border-radius: 15px;
-    filter: drop-shadow(30px  30px  30px rgba(255,  255,  255,  0.5)) drop-shadow(50px  50px  5px rgba(255,  102,  204,  0.5));
-  }
-
-
-  
-.carousel-image3 {
-  width: 50%; 
-  height: 300px;
-  display: block; 
-    margin: 0 auto;
-    border-radius: 50px;
-    filter: drop-shadow(30px  30px  30px rgba(255,  255,  255,  0.5)) drop-shadow(50px  50px  5px rgba(255,  102,  204,  0.5));
-    }
-    
-    
-
-
-
-.carousel-caption {
-  background-color: grey;
-  color: #ff96e3;
-  padding:  10px;
-  margin-top: -60px; 
-  margin-left: auto;
-  margin-right: auto;
-  width:  50%;
-  top: auto; 
-  bottom:  0; 
-  transform: none; 
-  border:#ffffff solid 5px;
 }
 
+.project-img {
+  width: 100%;
+  border-radius: 10px;
+  
+}
 
-.carousel-caption h3 {
+.project-title {
   font-size: 24px;
-  margin-bottom: 10px;
+  color: #333;
+  margin-top: 10px;
 }
 
-.carousel-caption p {
-  font-size: 16px;
-  margin-bottom: 0;
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
 }
 
-
-/* Media query for screens with a maximum width of 768px */
-@media (max-width:  768px) {
-  .carousel-image1, .carousel-image2, .carousel-image3 {
-    filter: drop-shadow(3vw  3vw  3vw rgba(255,  255,  255,  0.7)) drop-shadow(4vw  4vw  2vw rgba(255,  102,  204,  0.7));
-  }
+.btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-@media (max-width:  480px) {
-  .carousel-image1, .carousel-image2, .carousel-image3 {
-    filter: drop-shadow(1vw  1vw  1vw rgba(255,  255,  255,  0.7)) drop-shadow(2vw  2vw  1vw rgba(255,  102,  204,  0.7));
-  }
+.btn-color-2 {
+  background-color: #ff96e3;
+  color: #fff;
+}
+
+.btn-color-2:hover {
+  background-color: #9747ff;
+}
+
+.icon.arrow {
+  width: 50px;
+  height: 50px;
+  margin-top: 50px;
+  cursor: pointer;
 }
