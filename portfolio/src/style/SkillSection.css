@@ -1,130 +1,166 @@
-/* General styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-}
-
-.canvas {
-  display: flex;
-  justify-content: center;
-  
-  padding: 50px;
-}
-
-.canvas__content {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 900px;
+/* Base styles remain unchanged */
+.skill-section {
+  padding: 106px 0 160px;
+  overflow: hidden;
+  position: relative;
+  /* background: #f5f5f5; */
+ }
+ 
+ .skill-section .section-title {
+  position: relative;
+  transform: translate(0);
+  top: 0;
+  text-align: center;
+  margin-bottom: 50px;
+  text-transform: capitalize;
+  color: #333;
+ }
+ 
+ .skill-section .skill-wrapper {
+  position: relative;
+  max-width: 1170px;
   margin: 0 auto;
-}
-
-.canvas__section {
-  flex: 1 1 calc(33.33% - 20px); /* Adjusted width calculation */
-  margin: 0 20px 20px 0;
-  padding: 20px;
-  background-color:#acb4b4; /* Lightened background color */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adjusted box shadow */
-  border-radius: 8px; /* Slightly increased border radius */
-  border: 5px solid #80cab1; /* Changed border color */
-}
-
-.canvas__section h2 {
-  font-size: 1.2rem; /* Increased font size */
-  color: #333333;
-  margin-bottom: 10px;
-}
-
-.canvas__section p {
-  font-size: 14px; /* Increased font size */
-  color: white; /* Darkened text color */
+  z-index: 2;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+ }
+ 
+ .skill-section .skill-wrapper .vertical-line {
+  display: block;
+  height: calc(100% + 80px);
+  width: 2px;
+  background: #008081;
+  position: absolute;
+  left: 50%;
+  margin-left: -1px;
+  top: -40px;
+ }
+ 
+ .skill-section .skill-wrapper .vertical-line:before,
+ .skill-section .skill-wrapper .vertical-line:after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background: #008081;
+  left: -7px;
+ }
+ 
+ .skill-section .single-skill {
+  width: 50%;
+  max-width: 535px;
+  margin-bottom: 50px;
+  background: pink;
+  padding: 15px 30px 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  position: relative;
+  z-index: 1;
+  align-self: stretch;
+  transform: translateX(30px);
+  transition: all 1.5s ease 0.1s;
+ }
+ 
+ .skill-section .single-skill.animated {
+  transform: translateX(0);
+ }
+ 
+ .skill-section .single-skill p {
   line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.canvas__section ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.canvas__section li {
-  font-size: 14px; /* Increased font size */
-  color: white; /* Darkened text color */
-  padding: 5px 0;
-}
-
-    /* Progress bar styles */
-    .progress-bar {
-      margin-bottom: 10px; /* Increased margin bottom for better separation */
-    }
-
-    .progress-bar .progress {
-      height: 8px; /* Reduced height */
-      line-height: 8px; /* Added line-height */
-      text-align: center;
-      color: white;
-      border-radius: 25px; /* Reduced border radius */
-      background-color: #ff96e3;
-      width: 0; /* Initially set width to 0 */
-      transition: width 0.5s ease-in-out; /* Added transition for smoother animation */
-    }
-
-    /* Different progress bars */
-    .progress-bar:nth-child(odd) {
-      background-color: #ff96e3;
-    }
-
-    /* Adjusted font size for progress text */
-    .progress-bar .progress {
-      font-size: 10px;
-    }
-    .heading {
-      text-align: center;
-    }
-    
-    .heading h1 {
-      color: #af0057;
-    }
-
-    /* Media Query for smaller screens */
-@media screen and (max-width: 768px) {
-  .canvas__section {
-    flex: 1 1 calc(100% - 20px); /* Adjusted width calculation for full width on smaller screens */
-    margin: 0 0 20px 0; /* Remove right margin and add bottom margin for spacing */
+  margin-top: 12px;
+  color: #008081;
+ }
+ 
+ .skill-section .single-skill h3 {
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: flex-start;
+ }
+ 
+ .skill-section .single-skill h3 .line {
+  display: block;
+  position: relative;
+  top: 5px;
+  margin-left: 30px;
+  height: 2px;
+ }
+ 
+ .skill-section .single-skill span.circle {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: #008081;
+  border-radius: 100%;
+  position: absolute;
+  top: 50px;
+  right: -61px;
+  z-index: 2;
+  box-shadow: 0 0px 0px 8px #333;
+ }
+ 
+ .skill-section .single-skill:nth-child(odd) span.circle {
+  right: inherit;
+  left: -61px;
+ }
+ 
+ .skill-section .single-skill span.rectengle {
+  position: absolute;
+  top: 42px;
+  right: -50px;
+  height: 34px;
+  width: 115px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 1%, rgba(78, 78, 78, 0.99) 99%, rgba(78, 78, 78, 1) 100%);
+ }
+ 
+ .skill-section .single-skill:nth-child(odd) span.rectengle {
+  right: inherit;
+  left: -50px;
+  background: linear-gradient(to right, rgba(78, 78, 78, 1) 0%, rgba(0, 0, 0, 0) 100%);
+ }
+ 
+ /* Responsive adjustments */
+ @media (max-width: 1200px) {
+  .skill-section .skill-wrapper .single-skill {
+     width: 48%; /* Adjust the width for medium screens */
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ }
+ 
+ @media (max-width: 992px) {
+  .skill-section .skill-wrapper .single-skill {
+     width: 100%; /* Make single skills take full width on smaller screens */
+  }
+ }
+ 
+ @media (max-width: 768px) {
+  .skill-section {
+     padding: 50px 0 100px; /* Adjust padding for smaller screens */
+  }
+ 
+  .skill-section .section-title {
+     margin-bottom: 20px; /* Reduce margin for smaller screens */
+  }
+ 
+  .skill-section .skill-wrapper .single-skill {
+     margin-bottom: 30px; /* Reduce margin for smaller screens */
+  }
+ }
+ 
+ @media (max-width: 576px) {
+  .skill-section {
+     padding: 30px 0 50px; /* Further reduce padding for very small screens */
+  }
+ 
+  .skill-section .section-title {
+     margin-bottom: 10px; /* Further reduce margin for very small screens */
+  }
+ 
+  .skill-section .skill-wrapper .single-skill {
+     margin-bottom: 20px; /* Further reduce margin for very small screens */
+  }
+ }
+ 
