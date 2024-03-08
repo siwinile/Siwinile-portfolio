@@ -13,13 +13,13 @@ function Canvas() {
                     <span class="circle"></span>
                     <span class="rectengle"></span>
                     <h3><span class="title">html</span> <span class="line"></span></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>my canvas in the world of webdevelopment is HTML and CSS. I create clear, sematic HTML structures and give them a modern responsive style and make over.</p>
                 </div>
                 <div class="single-skill animate-me">
                     <span class="circle"></span>
                     <span class="rectengle"></span>
                     <h3><span class="title">css</span> <span class="line"></span></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis voluptate quod odit excepturi nisi!</p>
+                    <p>my canvas in the world of webdevelopment is HTML and CSS. I create clear, sematic HTML structures and give them a modern responsive style and make over.</p>
                 </div>
                 <div class="single-skill animate-me">
                    <span class="circle"></span>
@@ -31,7 +31,7 @@ function Canvas() {
                    <span class="circle"></span>
                    <span class="rectengle"></span>
                     <h3><span class="title">JavaScript</span> <span class="line"></span></h3>
-                    <p>JavaScript is my expertise, especially in frontend development. I've created numerous interactive and dynamic web applications using JavaScript, including modern frameworks like React.js </p>
+                    <p>javascript is thr foundation of my work. i use javascript to create user friendly and entertaining online application </p>
                 </div>
                 <div class="single-skill animate-me">
                    <span class="circle"></span>
