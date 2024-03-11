@@ -86,7 +86,7 @@ function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              to="Canvas"
+              to="skill-section"
               className="navbar--content"
             >
               Skills

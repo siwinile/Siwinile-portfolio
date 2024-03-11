@@ -1,26 +1,26 @@
-/* SkillSection.css */
 
-.skill-section {
+/*----------skill section----------*/
+.skill-section{
    padding: 106px 0 160px;
    overflow: hidden;
    position: relative;
-   /* background: #16171b;  */
+   /* background: #16171b; */
 }
-
-.skill-section .section-title {
+.skill-section .section-title{
    position: relative;
    transform: translate(0);
    top: 0;
    text-align: center;
    margin-bottom: 50px;
    text-transform: lowercase;
-   color: #Af0057; /* Vibrant pink for title */
-   text-shadow: -1px -1px 0 #26272d, 
-                1px -1px 0 #26272d, 
-                -1px 1px 0 #26272d, 
-                1px 1px 0 #26272d;
-}
+   color: #af0057;
+text-shadow: 
+    -1px -1px 0 rgba(38, 39, 45, 0.5), 
+    1px -1px 0 rgba(38, 39, 45, 0.5), 
+    -1px 1px 0 rgba(38, 39, 45, 0.5), 
+    1px 1px 0 rgba(38, 39, 45, 0.5);
 
+}
 .skill-section .skill-wrapper {
    position: relative;
    max-width: 1170px;
@@ -31,65 +31,69 @@
    align-items: center;
    justify-content: space-between;
 }
-
 .skill-section .skill-wrapper .vertical-line {
    display: block;
    height: calc(100% + 80px);
    width: 2px;
-   background: #Af0057; /* Vibrant pink for vertical line */
+   background: #af0057;
    position: absolute;
    left: 50%;
    margin-left: -1px;
    top: -40px;
 }
-
 .skill-section .skill-wrapper .vertical-line:before,
-.skill-section .skill-wrapper .vertical-line:after {
+.skill-section .skill-wrapper .vertical-line:after{
    content: "";
    position: absolute;
    width: 16px;
    height: 16px;
    border-radius: 100%;
-   background: #Af0057; /* Vibrant pink for circular markers */
+   background: #ff96e3;
    left: -7px;
 }
-
-.skill-section .skill-wrapper .vertical-line:before {
+.skill-section .skill-wrapper .vertical-line:before{
    top: 0;
 }
-
-.skill-section .skill-wrapper .vertical-line:after {
+.skill-section .skill-wrapper .vertical-line:after{
    bottom: 0;
 }
-
 .skill-section .single-skill {
-   width: 40%;
+   width: 45%;
    max-width: 535px;
    margin-bottom: 50px;
-   background: #ff96e3; /* Light pink for skill background */
+   /* background: #1c1d21; */
    padding: 15px 30px 20px;
    border-radius: 5px;
-   border: 1px solid #26272d;
+   border: 2px solid #ff96e3;
    position: relative;
    z-index: 1;
    align-self: stretch;
    transform: translateX(30px);
-   opacity: 1; /* Ensure full opacity */
-   visibility: visible; /* Ensure visibility */
+   opacity: 1;
+   visibility:visible;
    transition: all 1.5s ease 0.1s;
 }
+
+.skill-section .single-skill:hover {
+   transform: translateX(0);
+   box-shadow: 10px 10px 10px 10px #ff96e3;
+}
+.skill-section .single-skill:nth-child(odd):hover{
+   transform: translateX(0);
+   box-shadow: 5px 5px 5px 5px #ff96e3;
+}
+
+
 
 .skill-section .single-skill.animated {
    transform: translateX(0);
    opacity: 1;
    visibility: visible;
 }
-
 .skill-section .single-skill:nth-child(odd) {
    transform: translate(-30px, 80px);
    transition: all 1.5s ease 0.5s;
 }
-
 .skill-section .single-skill.animated:nth-child(odd) {
    transform: translate(0, 80px);
 }
@@ -97,55 +101,102 @@
 .skill-section .single-skill p {
    line-height: 1.6;
    margin-top: 12px;
-   color: #ffffff; /* White for text */
+   color:white;
 }
-
-.skill-section .single-skill h3 {
+.skill-section .single-skill h3{
    position: relative;
    display: flex;
    flex-flow: row;
    align-items: center;
    justify-content: flex-start;
 }
-
 .skill-section .single-skill h3 .line {
    display: block;
    position: relative;
    top: 5px;
    margin-left: 30px;
    height: 2px;
-   background: linear-gradient(to right, rgba(78,78,78,1) 0%, rgba(15,15,15,0) 81%, rgba(0,0,0,0) 100%);
+   background: -moz-linear-gradient(left,  rgba(78,78,78,1) 0%, rgba(15,15,15,0) 81%, rgba(0,0,0,0) 100%);
+   background: -webkit-linear-gradient(left,  rgba(78,78,78,1) 0%,rgba(15,15,15,0) 81%,rgba(0,0,0,0) 100%);
+   background: linear-gradient(to right,  rgba(78,78,78,1) 0%,rgba(15,15,15,0) 81%,rgba(0,0,0,0) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e4e4e', endColorstr='#00000000',GradientType=1 );
 }
 
 .skill-section .single-skill span.circle {
    display: block;
    width: 18px;
    height: 18px;
-   background: #Af0057; /* Vibrant pink for circle */
+   background: #af0057;
    border-radius: 100%;
    position: absolute;
    top: 50px;
    right: -61px;
    z-index: 2;
-   box-shadow: 0 0px 0px 8px #333;
+   box-shadow: 0 0px 0px 8px #000000;
 }
-
-.skill-section .single-skill:nth-child(odd) span.circle {
+.skill-section .single-skill:nth-child(odd) span.circle{
    right: inherit;
    left: -61px;
 }
-
 .skill-section .single-skill span.rectengle {
    position: absolute;
    top: 42px;
    right: -50px;
    height: 34px;
    width: 115px;
-   background: linear-gradient(to right, rgba(0,0,0,0) 1%, rgba(78,78,78,0.99) 99%, rgba(78,78,78,1) 100%);
+   background: -moz-linear-gradient(left, rgba(0,0,0,0) 1%, rgba(78,78,78,0.99) 99%, rgba(78,78,78,1) 100%);
+   background: -webkit-linear-gradient(left, rgba(0,0,0,0) 1%,rgba(78,78,78,0.99) 99%,rgba(78,78,78,1) 100%);
+   background: linear-gradient(to right, rgba(0,0,0,0) 1%,rgba(78,78,78,0.99) 99%,rgba(78,78,78,1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#4e4e4e',GradientType=1 );
 }
 
-.skill-section .single-skill:nth-child(odd) span.rectengle {
+.skill-section .single-skill:nth-child(odd) span.rectengle{
    right: inherit;
    left: -50px;
-   background: linear-gradient(to right, rgba(78,78,78,1) 0%, rgba(0,0,0,0) 100%);
+   background: -moz-linear-gradient(left,  rgba(78,78,78,1) 0%, rgba(0,0,0,0) 100%);
+   background: -webkit-linear-gradient(left,  rgba(78,78,78,1) 0%,rgba(0,0,0,0) 100%);
+   background: linear-gradient(to right,  rgba(78,78,78,1) 0%,rgba(0,0,0,0) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e4e4e', endColorstr='#00000000',GradientType=1 );
+
 }
+
+/* Existing CSS */
+/* ... */
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+   .skill-section .skill-wrapper {
+      flex-direction: column;
+      align-items: center;
+   }
+  
+   .skill-section .single-skill {
+      width: 50%; /* Adjust width for smaller screens */
+      margin-bottom: 20; /* Reduce margin for better spacing on smaller screens */
+   }
+  
+   .skill-section .single-skill p {
+      font-size: 7px; /* Reduce font size for smaller screens */
+   }
+  
+   .skill-section .single-skill h3 {
+      font-size: 18px; /* Adjust font size for smaller screens */
+   }
+  
+   .skill-section .single-skill span.circle,
+   .skill-section .single-skill span.rectengle {
+      display: none; /* Hide these elements on smaller screens */
+   }
+  }
+  
+  @media (max-width: 480px) {
+   .skill-section .single-skill {
+      width: 100%; /* Make single skill take full width on very small screens */
+   }
+  
+   .skill-section .single-skill p,
+   .skill-section .single-skill h3 {
+      font-size: 12px; /* Further reduce font size for very small screens */
+   }
+  }
+  
