@@ -61,7 +61,6 @@ text-shadow:
    width: 45%;
    max-width: 535px;
    margin-bottom: 50px;
-   /* background: #1c1d21; */
    padding: 15px 30px 20px;
    border-radius: 5px;
    border: 2px solid #ff96e3;
@@ -160,43 +159,65 @@ text-shadow:
 
 }
 
-/* Existing CSS */
-/* ... */
+/* Add responsiveness */
 
-/* Responsive Styles */
-@media (max-width: 768px) {
+/* Adjust padding for smaller screens */
+/* Make the skill section responsive */
+/* Make the skill section responsive */
+@media screen and (max-width: 768px) {
+   .skill-section {
+     padding: 80px 0; /* Adjust padding for smaller screens */
+   }
+ 
    .skill-section .skill-wrapper {
-      flex-direction: column;
-      align-items: center;
+     justify-content: center; /* Center align skill items */
    }
-  
+ 
    .skill-section .single-skill {
-      width: 50%; /* Adjust width for smaller screens */
-      margin-bottom: 20; /* Reduce margin for better spacing on smaller screens */
+     width: 90%; /* Adjust width for smaller screens */
+     max-width: none;
+     transform: none;
+     margin: 0 auto 30px; /* Center align skill items */
    }
-  
-   .skill-section .single-skill p {
-      font-size: 7px; /* Reduce font size for smaller screens */
+ 
+   .skill-section .single-skill:nth-child(odd) {
+     transform: none; /* Remove translation for odd skill items */
    }
-  
+ 
    .skill-section .single-skill h3 {
-      font-size: 18px; /* Adjust font size for smaller screens */
+     font-size: 18px; /* Adjust font size for smaller screens */
    }
-  
+ 
    .skill-section .single-skill span.circle,
    .skill-section .single-skill span.rectengle {
-      display: none; /* Hide these elements on smaller screens */
+     right: auto; /* Reset circle and rectangle positioning */
+     left: -61px;
    }
-  }
-  
-  @media (max-width: 480px) {
-   .skill-section .single-skill {
-      width: 100%; /* Make single skill take full width on very small screens */
+ 
+   .skill-section .single-skill:nth-child(odd) span.circle {
+     left: auto; /* Reset circle positioning for odd skill items */
+     right: -61px;
    }
-  
-   .skill-section .single-skill p,
-   .skill-section .single-skill h3 {
-      font-size: 12px; /* Further reduce font size for very small screens */
+ 
+   .skill-section .single-skill span.rectengle {
+     right: auto; /* Reset rectangle positioning */
+     left: -50px;
    }
-  }
-  
+ 
+   .skill-section .single-skill:nth-child(odd) span.rectengle {
+     left: auto; /* Reset rectangle positioning for odd skill items */
+     right: -50px;
+   }
+ }
+ 
+ /* Hover effect for skills */
+ .skill-section .single-skill:hover {
+   transform: translateX(0);
+   box-shadow: 10px 10px 10px 10px #ff96e3;
+ }
+ 
+ .skill-section .single-skill:nth-child(odd):hover {
+   transform: translateX(0);
+   box-shadow: 5px 5px 5px 5px #ff96e3;
+ }
+ 

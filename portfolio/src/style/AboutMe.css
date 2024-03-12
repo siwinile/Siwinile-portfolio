@@ -1,68 +1,22 @@
+/* About Us */
 .about--section {
-  padding:  50px  0;
+  display: grid;
+  padding: 133.3px 85.3px;
+  align-items: center;
+  gap: 114.6px;
+  grid-template-columns: repeat(2, 1fr);
 }
-
-.about--section--container {
-  display: flex; 
-  flex-wrap: wrap;
-  justify-content: center; 
-  align-items: center; 
- 
+.about--section--img > img {
+  width: 100%;
+  height: 100%;
 }
-
-.about--section--img {
-  max-width:  100%;
-  height: auto;
-  margin-right:  20px; 
-  flex:  1  0 auto; 
-  border-bottom: 6px solid #af0057;
-}
-
-.hero--section--content--box.about--section--box {
-  max-width:  600px; 
-  text-align: center;
-  flex:  1  0 auto; /
-}
-
-.skills-section--heading {
-  font-size:  36px;
-  margin-bottom:  20px;
-  color:#af0057;
-}
-
-.hero--section-description {
-  font-size:  18px;
-  line-height:  1.6;
-  color:white;
-}
-
-@media (min-width:  768px) {
-  .about--section--container {
-    justify-content: flex-start; 
-    flex-direction: row; 
-  }
-
-  .hero--section--content--box.about--section--box {
-    text-align: left;
-  }
-
-  .hero--section-description {
-    font-size:  20px;
-  }
-}
-
-
 
 .flip-card {
-  background-color:#fb9da7;
-  width: 400px;
-  height: 450px;
+  background-color: transparent;
+  width: 250px;
+  height: 400px;
   perspective: 1000px;
   font-family: sans-serif;
-  margin-left: 200px; /* Adjust this value as needed */
-  padding: -100px;
-  opacity: 0.6;
-  
 }
 
 .title {
@@ -79,12 +33,10 @@
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  
 }
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
-  
 }
 
 .flip-card-front, .flip-card-back {
@@ -102,13 +54,45 @@
 }
 
 .flip-card-front {
-  background: linear-gradient(120deg, #fb9da7 60%, #FF96E3 88%, white 40%, rgba(255, 80, 162, 0.603) 48%);
-
-  color:black;
+  background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
+     rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
+  color: coral;
 }
 
 .flip-card-back {
-  background: linear-gradient(120deg, #e178c5  60%, white 88%, #e178c5 40%, rgba(80, 36, 61, 0.603) 48%);
-  color: black;
+  background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
+     bisque 40%, rgb(255, 185, 160) 78%);
+  color: white;
   transform: rotateY(180deg);
 }
+/* About Us Ends */
+@media (max-width: 767px) {
+  .flip-card {
+    width: 130px; 
+    max-width: 130px; 
+    margin-left: -80px; 
+  }
+  .flip-card-inner {
+    font-size: 10px; 
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .about--section{
+    gap:20px;
+    padding-top: 0;
+    padding-bottom:0;
+  }
+  .about--section--img{
+    width: 150PX;
+    height: 350px;
+    margin-right: 60px;
+  }
+  
+}
+
+
+
+
+
+
