@@ -1,12 +1,12 @@
-
 /*----------skill section----------*/
-.skill-section{
+.skill-section {
    padding: 106px 0 160px;
    overflow: hidden;
    position: relative;
    /* background: #16171b; */
-}
-.skill-section .section-title{
+ }
+ 
+ .skill-section .section-title {
    position: relative;
    transform: translate(0);
    top: 0;
@@ -14,14 +14,10 @@
    margin-bottom: 50px;
    text-transform: lowercase;
    color: #af0057;
-text-shadow: 
-    -1px -1px 0 rgba(38, 39, 45, 0.5), 
-    1px -1px 0 rgba(38, 39, 45, 0.5), 
-    -1px 1px 0 rgba(38, 39, 45, 0.5), 
-    1px 1px 0 rgba(38, 39, 45, 0.5);
-
-}
-.skill-section .skill-wrapper {
+   text-shadow: -1px -1px 0 rgba(38, 39, 45, 0.5), 1px -1px 0 rgba(38, 39, 45, 0.5), -1px 1px 0 rgba(38, 39, 45, 0.5), 1px 1px 0 rgba(38, 39, 45, 0.5);
+ }
+ 
+ .skill-section .skill-wrapper {
    position: relative;
    max-width: 1170px;
    margin: 0 auto;
@@ -30,8 +26,9 @@ text-shadow:
    flex-flow: row wrap;
    align-items: center;
    justify-content: space-between;
-}
-.skill-section .skill-wrapper .vertical-line {
+ }
+ 
+ .skill-section .skill-wrapper .vertical-line {
    display: block;
    height: calc(100% + 80px);
    width: 2px;
@@ -40,9 +37,10 @@ text-shadow:
    left: 50%;
    margin-left: -1px;
    top: -40px;
-}
-.skill-section .skill-wrapper .vertical-line:before,
-.skill-section .skill-wrapper .vertical-line:after{
+ }
+ 
+ .skill-section .skill-wrapper .vertical-line:before,
+ .skill-section .skill-wrapper .vertical-line:after {
    content: "";
    position: absolute;
    width: 16px;
@@ -50,14 +48,17 @@ text-shadow:
    border-radius: 100%;
    background: #ff96e3;
    left: -7px;
-}
-.skill-section .skill-wrapper .vertical-line:before{
+ }
+ 
+ .skill-section .skill-wrapper .vertical-line:before {
    top: 0;
-}
-.skill-section .skill-wrapper .vertical-line:after{
+ }
+ 
+ .skill-section .skill-wrapper .vertical-line:after {
    bottom: 0;
-}
-.skill-section .single-skill {
+ }
+ 
+ .skill-section .single-skill {
    width: 45%;
    max-width: 535px;
    margin-bottom: 50px;
@@ -66,62 +67,66 @@ text-shadow:
    border: 2px solid #ff96e3;
    position: relative;
    z-index: 1;
-   align-self: stretch;
+   /* align-self: stretch; */ /* Remove this line */
    transform: translateX(30px);
    opacity: 1;
-   visibility:visible;
+   visibility: visible;
    transition: all 1.5s ease 0.1s;
-}
-
-.skill-section .single-skill:hover {
+ }
+ 
+ .skill-section .single-skill:hover {
    transform: translateX(0);
    box-shadow: 10px 10px 10px 10px #ff96e3;
-}
-.skill-section .single-skill:nth-child(odd):hover{
+ }
+ 
+ .skill-section .single-skill:nth-child(odd):hover {
    transform: translateX(0);
    box-shadow: 5px 5px 5px 5px #ff96e3;
-}
-
-
-
-.skill-section .single-skill.animated {
+ }
+ 
+ .skill-section .single-skill.animated {
    transform: translateX(0);
    opacity: 1;
    visibility: visible;
-}
-.skill-section .single-skill:nth-child(odd) {
+ }
+ 
+ .skill-section .single-skill:nth-child(odd) {
    transform: translate(-30px, 80px);
    transition: all 1.5s ease 0.5s;
-}
-.skill-section .single-skill.animated:nth-child(odd) {
+ }
+ 
+ .skill-section .single-skill.animated:nth-child(odd) {
    transform: translate(0, 80px);
-}
-
-.skill-section .single-skill p {
+ }
+ 
+ .skill-section .single-skill p {
    line-height: 1.6;
    margin-top: 12px;
-   color:white;
-}
-.skill-section .single-skill h3{
+   color: white;
+   font-size: 14px;
+ }
+ 
+ .skill-section .single-skill h3 {
    position: relative;
    display: flex;
    flex-flow: row;
    align-items: center;
    justify-content: flex-start;
-}
-.skill-section .single-skill h3 .line {
+ }
+ 
+ .skill-section .single-skill h3 .line {
    display: block;
    position: relative;
    top: 5px;
    margin-left: 30px;
    height: 2px;
-   background: -moz-linear-gradient(left,  rgba(78,78,78,1) 0%, rgba(15,15,15,0) 81%, rgba(0,0,0,0) 100%);
-   background: -webkit-linear-gradient(left,  rgba(78,78,78,1) 0%,rgba(15,15,15,0) 81%,rgba(0,0,0,0) 100%);
-   background: linear-gradient(to right,  rgba(78,78,78,1) 0%,rgba(15,15,15,0) 81%,rgba(0,0,0,0) 100%);
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e4e4e', endColorstr='#00000000',GradientType=1 );
-}
-
-.skill-section .single-skill span.circle {
+   background: -moz-linear-gradient(left, rgba(78, 78, 78, 1) 0%, rgba(15, 15, 15, 0) 81%, rgba(0, 0, 0, 0) 100%);
+   background: -webkit-linear-gradient(left, rgba(78, 78, 78, 1) 0%, rgba(15, 15, 15, 0) 81%, rgba(0, 0, 0, 0) 100%);
+   background: linear-gradient(to right, rgba(78, 78, 78, 1) 0%, rgba(15, 15, 15, 0) 81%, rgba(0, 0, 0, 0) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4e4e4e', endColorstr='#00000000', GradientType=1);
+ }
+ 
+ .skill-section .single-skill span.circle {
    display: block;
    width: 18px;
    height: 18px;
@@ -132,92 +137,103 @@ text-shadow:
    right: -61px;
    z-index: 2;
    box-shadow: 0 0px 0px 8px #000000;
-}
-.skill-section .single-skill:nth-child(odd) span.circle{
+ }
+ 
+ .skill-section .single-skill:nth-child(odd) span.circle {
    right: inherit;
    left: -61px;
-}
-.skill-section .single-skill span.rectengle {
+ }
+ 
+ .skill-section .single-skill span.rectengle {
    position: absolute;
    top: 42px;
    right: -50px;
    height: 34px;
    width: 115px;
-   background: -moz-linear-gradient(left, rgba(0,0,0,0) 1%, rgba(78,78,78,0.99) 99%, rgba(78,78,78,1) 100%);
-   background: -webkit-linear-gradient(left, rgba(0,0,0,0) 1%,rgba(78,78,78,0.99) 99%,rgba(78,78,78,1) 100%);
-   background: linear-gradient(to right, rgba(0,0,0,0) 1%,rgba(78,78,78,0.99) 99%,rgba(78,78,78,1) 100%);
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#4e4e4e',GradientType=1 );
-}
-
-.skill-section .single-skill:nth-child(odd) span.rectengle{
+   background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 1%, rgba(78, 78, 78, 0.99) 99%, rgba(78, 78, 78, 1) 100%);
+   background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 1%, rgba(78, 78, 78, 0.99) 99%, rgba(78, 78, 78, 1) 100%);
+   background: linear-gradient(to right, rgba(0, 0, 0, 0) 1%, rgba(78, 78, 78, 0.99) 99%, rgba(78, 78, 78, 1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#4e4e4e', GradientType=1);
+ }
+ 
+ .skill-section .single-skill:nth-child(odd) span.rectengle {
    right: inherit;
    left: -50px;
-   background: -moz-linear-gradient(left,  rgba(78,78,78,1) 0%, rgba(0,0,0,0) 100%);
-   background: -webkit-linear-gradient(left,  rgba(78,78,78,1) 0%,rgba(0,0,0,0) 100%);
-   background: linear-gradient(to right,  rgba(78,78,78,1) 0%,rgba(0,0,0,0) 100%);
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e4e4e', endColorstr='#00000000',GradientType=1 );
-
-}
-
-/* Add responsiveness */
-
-/* Adjust padding for smaller screens */
-/* Make the skill section responsive */
-/* Make the skill section responsive */
-@media screen and (max-width: 768px) {
-   .skill-section {
-     padding: 80px 0; /* Adjust padding for smaller screens */
-   }
- 
-   .skill-section .skill-wrapper {
-     justify-content: center; /* Center align skill items */
-   }
- 
-   .skill-section .single-skill {
-     width: 90%; /* Adjust width for smaller screens */
-     max-width: none;
-     transform: none;
-     margin: 0 auto 30px; /* Center align skill items */
-   }
- 
-   .skill-section .single-skill:nth-child(odd) {
-     transform: none; /* Remove translation for odd skill items */
-   }
- 
-   .skill-section .single-skill h3 {
-     font-size: 18px; /* Adjust font size for smaller screens */
-   }
- 
-   .skill-section .single-skill span.circle,
-   .skill-section .single-skill span.rectengle {
-     right: auto; /* Reset circle and rectangle positioning */
-     left: -61px;
-   }
- 
-   .skill-section .single-skill:nth-child(odd) span.circle {
-     left: auto; /* Reset circle positioning for odd skill items */
-     right: -61px;
-   }
- 
-   .skill-section .single-skill span.rectengle {
-     right: auto; /* Reset rectangle positioning */
-     left: -50px;
-   }
- 
-   .skill-section .single-skill:nth-child(odd) span.rectengle {
-     left: auto; /* Reset rectangle positioning for odd skill items */
-     right: -50px;
-   }
+   background: -moz-linear-gradient(left, rgba(78, 78, 78, 1) 0%, rgba(0, 0, 0, 0) 100%);
+   background: -webkit-linear-gradient(left, rgba(78, 78, 78, 1) 0%, rgba(0, 0, 0, 0) 100%);
+   background: linear-gradient(to right, rgba(78, 78, 78, 1) 0%, rgba(0, 0, 0, 0) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4e4e4e', endColorstr='#00000000', GradientType=1);
  }
  
- /* Hover effect for skills */
- .skill-section .single-skill:hover {
-   transform: translateX(0);
-   box-shadow: 10px 10px 10px 10px #ff96e3;
- }
+ /* Make the skill section responsive */
+ @media screen and (max-width: 768px) {
+    .skill-section {
+      padding: 80px 0; /* Adjust padding for smaller screens */
+    }
+  
+    .skill-section .skill-wrapper {
+      justify-content: center; /* Center align skill items */
+    }
+  
+    .skill-section .single-skill {
+      width: 45%; /* Adjust width for smaller screens */
+      max-width: none;
+      transform: none;
+      margin: 0 auto 30px; /* Center align skill items */
+    }
  
- .skill-section .single-skill:nth-child(odd):hover {
-   transform: translateX(0);
-   box-shadow: 5px 5px 5px 5px #ff96e3;
- }
+    .skill-section .single-skill p {
+       line-height: 0.9; /* Reset line height */
+       margin-top: 12px; /* Reset top margin */
+       font-size: 10px; /* Adjust font size for smaller screens */
+    }
+  
+    .skill-section .single-skill:nth-child(odd) {
+      transform: none; /* Remove translation for odd skill items */
+    }
+  
+    .skill-section .single-skill h3 {
+      font-size: 24px; /* Adjust font size for smaller screens */
+    }
+  
+    .skill-section .single-skill span.circle,
+    .skill-section .single-skill span.rectengle {
+      right: 100px; /* Reset circle and rectangle positioning */
+      /* left: -1px; */
+    }
+  
+    .skill-section .single-skill:nth-child(odd) span.circle {
+      left: 100px; /* Reset circle positioning for odd skill items */
+      /* right: -61px; */
+    }
+  
+    .skill-section .single-skill span.rectengle {
+      right: auto; /* Reset rectangle positioning */
+      left: -50px;
+    }
+  
+    .skill-section .single-skill:nth-child(odd) span.rectengle {
+      left: auto; /* Reset rectangle positioning for odd skill items */
+      right: -50px;
+    }
+  }
+  /* .skill-section .section-title {
+    font-size: 2px; /* Adjust font size for smaller screens */
+   */
+  
+  .skill-section .single-skill {
+    width: 100%; /* Remove width restriction */
+    margin-bottom: 20px; /* Add margin between skills */
+  }
+  
+  /* Hover effect for skills */
+  .skill-section .single-skill:hover {
+    transform: translateX(0);
+    box-shadow: 10px 10px 10px 10px #ff96e3;
+  }
+  
+  .skill-section .single-skill:nth-child(odd):hover {
+    transform: translateX(0);
+    box-shadow: 5px 5px 5px 5px #ff96e3;
+  }
  
