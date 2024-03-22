@@ -168,52 +168,52 @@
  /* Make the skill section responsive */
  @media screen and (max-width: 768px) {
     .skill-section {
-      padding: 80px 0; /* Adjust padding for smaller screens */
+      padding: 80px 0; 
     }
   
     .skill-section .skill-wrapper {
-      justify-content: center; /* Center align skill items */
+      justify-content: center; 
     }
   
     .skill-section .single-skill {
-      width: 45%; /* Adjust width for smaller screens */
+      width: 45%; 
       max-width: none;
       transform: none;
-      margin: 0 auto 30px; /* Center align skill items */
+      margin: 0 auto 30px; 
     }
  
     .skill-section .single-skill p {
-       line-height: 0.9; /* Reset line height */
-       margin-top: 12px; /* Reset top margin */
-       font-size: 10px; /* Adjust font size for smaller screens */
+       line-height: 0.9; 
+       margin-top: 12px; 
+       font-size: 10px;
     }
   
     .skill-section .single-skill:nth-child(odd) {
-      transform: none; /* Remove translation for odd skill items */
+      transform: none; 
     }
   
     .skill-section .single-skill h3 {
-      font-size: 24px; /* Adjust font size for smaller screens */
+      font-size: 24px;
     }
   
     .skill-section .single-skill span.circle,
     .skill-section .single-skill span.rectengle {
-      right: 100px; /* Reset circle and rectangle positioning */
+      right: 100px; /
       /* left: -1px; */
     }
   
     .skill-section .single-skill:nth-child(odd) span.circle {
-      left: 100px; /* Reset circle positioning for odd skill items */
+      left: 100px; 
       /* right: -61px; */
     }
   
     .skill-section .single-skill span.rectengle {
-      right: auto; /* Reset rectangle positioning */
+      right: auto;
       left: -50px;
     }
   
     .skill-section .single-skill:nth-child(odd) span.rectengle {
-      left: auto; /* Reset rectangle positioning for odd skill items */
+      left: auto; 
       right: -50px;
     }
   }
@@ -222,8 +222,8 @@
    */
   
   .skill-section .single-skill {
-    width: 100%; /* Remove width restriction */
-    margin-bottom: 20px; /* Add margin between skills */
+    width: 100%; 
+    margin-bottom: 20px; 
   }
   
   /* Hover effect for skills */
