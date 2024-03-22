@@ -9,13 +9,13 @@ function Footer() {
                 <p className="footer-links">
                     <a href="Home">Home</a>
                     |
-                    <a href="AboutMe">AboutMe</a>
+                    <a href="#AboutMe">AboutMe</a>
                     |
-                    <a href="skills">Skills</a>
+                    <a href="#skill">Skills</a>
                     |
-                    <a href="Testimonials">Testimonials</a>
+                    <a href="#Testimonials">Testimonials</a>
                     |
-                    <a href="Contacts">Contacts</a>
+                    <a href="#Contacts">Contacts</a>
                 
                 </p>
                 

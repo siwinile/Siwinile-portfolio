@@ -2,7 +2,7 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-// import Navbar from "./pages/Navbar";
+import Navbar from "./pages/Navbar";
 import HeroSection from "./pages/HeroSection";
 import AboutMe from "./pages/AboutMe";
 import SkillSection from "./pages/SkillSection";

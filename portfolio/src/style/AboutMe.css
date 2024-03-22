@@ -4,7 +4,9 @@
   align-items: center;
   gap: 114.6px;
   grid-template-columns: repeat(2, 1fr);
+  background-color: rgba(214, 142, 178, 0.5);
 }
+
 
 .section--title {
   font-size: 3em; /* Adjust the font size as needed */

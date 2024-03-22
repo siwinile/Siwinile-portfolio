@@ -1,7 +1,7 @@
 /* Contact Form Styles */
 .contact--section {
   padding: 20px;
-  /* background-color: #000000; */
+  background-color: rgba(214, 142, 178, 0.5);
 }
 
 .contact--form--container {
