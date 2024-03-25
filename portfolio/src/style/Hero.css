@@ -19,7 +19,7 @@
   height: 85vh;
   width: 75%;
   background: linear-gradient(to right, rgba(255, 157, 207, 0.5) 50%, rgba(0, 0, 0, 0.1) 50%);
-  backdrop-filter: blur(25px);
+  /* backdrop-filter: blur(25px); */
   border: 3px solid rgba(255, 157, 207, 0.5);
   border-radius: 20px;
   box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.15);
@@ -127,9 +127,9 @@
   opacity: 0;
 }
 .logo {
-  width: 100px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 20px; /* Adjust the margin as needed */
+  width: 100px; 
+  height: auto; 
+  margin-right: 20px; 
 }
 .hero .content .div-text h1{
   animation-delay: 0.5s;

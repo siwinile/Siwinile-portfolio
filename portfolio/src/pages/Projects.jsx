@@ -61,7 +61,7 @@ function Projects() {
 
   return (
     <section id="Projects">
-      <p className="section__text__p1">Browse My Recent</p>
+      <p className="section__text__p1">Browse my projects</p>
       <h1 className="title">Projects</h1>
       <div className="experience-details-container">
         <div className="about-containers">
@@ -108,9 +108,9 @@ function Projects() {
         </div>
       </div>
       <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        className="icon arrow"
+        // src="./assets/arrow.png"
+        // alt="Arrow icon"
+        // className="icon arrow"
         onClick={() => window.location.href = './#contact'}
       />
     </section>

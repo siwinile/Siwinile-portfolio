@@ -55,8 +55,7 @@ const Portfolio = () => {
             <div className="div-text">
               <h1>Hi, I'm Siwinile</h1>
               <h4>Software Developer/UX / UI Designer</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Labore reprehenderit veritatis aperiam sed alias quos. Aliquid vero autem sapiente aspernatur?</p>
+              <p>I am an intern software developer.This website serves as my portfolio where you can find information about me, my skills,and contact information. Explore to learn more.</p>
                 <DownloadCVButton /> 
             </div>
             <div className="div-img">

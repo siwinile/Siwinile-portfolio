@@ -8,7 +8,7 @@ export default function AboutMe() {
       <div className="about--section--img">
       
       <img src={AboutImage} alt="About Section" className="about--section--img" />
-//         </div>
+      </div>
 
       <div class="flip-card">
     <div class="flip-card-inner">
