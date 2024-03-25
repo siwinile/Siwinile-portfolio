@@ -100,7 +100,7 @@
 .soc-link a i{
   font-size: 25px;
   cursor: pointer;
-  color: #801f82;
+   color: #ff9dcf;
   margin-bottom: 20px;
   transition: 0.4s;
 }
@@ -126,8 +126,10 @@
   animation: slide-top .5s linear forwards;
   opacity: 0;
 }
-.hero .logo{
-  animation-delay: 0.2s;
+.logo {
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Adjust the margin as needed */
 }
 .hero .content .div-text h1{
   animation-delay: 0.5s;
@@ -210,6 +212,7 @@ nav {
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
+  
 }
 
 .menu li {
@@ -230,7 +233,7 @@ nav {
 }
 
 .menu a:hover {
-  color: #ff9900;
+  color: #Af0057;
 }
 
 @media (max-width: 768px) {
@@ -238,14 +241,26 @@ nav {
     display: none;
     flex-direction: column;
     align-items: center;
+    
   }
 
   .menu.active {
     display: flex;
+    margin-top: auto;
+    
   }
+  
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 10px;
+  transition: color 0.3s;
+}
+
 
   .hamburger {
     display: block;
+   
   }
 }
 
@@ -316,7 +331,7 @@ nav {
   }
   .hero .content .div-text h4{
     color: #801f82;
-    font-size: 2px;
+    font-size: 12px;
     margin-bottom: 10px;
   }
   .hero .content .div-text p{
@@ -329,5 +344,13 @@ nav {
      width: 100%;
   }
  }
+ .hero .content .div-text .btn{
+  width: 100px;
+  height: 50px
+
+}
+.hero .content .div-text .btn{
+  font-size: 10px;
+}
  
    
